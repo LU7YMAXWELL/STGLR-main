@@ -1,0 +1,1863 @@
+D:\Anaconda\envs\icsgpu\python.exe main.py --data_name Toys_and_Games --lambda_0 0.2 --intent_num 1024
+data_dir                       :                            ../data/
+output_dir                     :                              output
+data_name                      :                      Toys_and_Games
+do_eval                        :                                   0
+intent_num                     :                                1024
+sim                            :                                 dot
+hidden_size                    :                                  64
+num_hidden_layers              :                                   2
+num_attention_heads            :                                   2
+hidden_act                     :                                gelu
+attention_probs_dropout_prob   :                                 0.5
+hidden_dropout_prob            :                                 0.5
+initializer_range              :                                0.02
+max_seq_length                 :                                  50
+lr                             :                               0.001
+batch_size                     :                                 256
+epochs                         :                                 300
+seed                           :                                2022
+rec_weight                     :                                   1
+lambda_0                       :                                 0.2
+beta_0                         :                                 0.1
+weight_decay                   :                                 0.0
+num_group_prototypes           :                                   5
+lambda_g                       :                                0.01
+data_file                      :          ../data/Toys_and_Games.txt
+train_data_file                :        ../data/Toys_and_Games_1.txt
+item_size                      :                               11926
+mask_id                        :                               11925
+log_file                       :           output\Toys_and_Games.txt
+ cluster train iterations: 20
+Total Parameters: 888379
+100%|██████████| 428/428 [00:12<00:00, 34.21it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:56<00:00,  7.61it/s]
+{'epoch': 0, 'rec_avg_loss': '9.2179', 'icl_avg_loss': '3.5489', 'joint_avg_loss': '12.7668'}
+100%|██████████| 76/76 [00:07<00:00, 10.34it/s]
+{'Epoch': 0, 'HIT@5': '0.0030', 'HIT@10': '0.0066', 'HIT@20': '0.0129', 'NDCG@5': '0.0018', 'NDCG@10': '0.0029', 'NDCG@20': '0.0045'}
+Top5_Sample:User 16641: True Item: 835 | Top-5: [1354, 994, 918, 146, 3858] | Hit: ✗
+User 17193: True Item: 1226 | Top-5: [1354, 3858, 147, 994, 146] | Hit: ✗
+User 5432: True Item: 2872 | Top-5: [1354, 918, 994, 3858, 146] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:12<00:00, 34.37it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.09s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:01<00:00,  6.96it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 1, 'rec_avg_loss': '9.1548', 'icl_avg_loss': '2.4920', 'joint_avg_loss': '11.6468'}
+100%|██████████| 76/76 [00:08<00:00,  9.02it/s]
+{'Epoch': 1, 'HIT@5': '0.0038', 'HIT@10': '0.0089', 'HIT@20': '0.0161', 'NDCG@5': '0.0022', 'NDCG@10': '0.0038', 'NDCG@20': '0.0056'}
+Top5_Sample:User 16435: True Item: 9989 | Top-5: [1354, 3858, 146, 147, 80] | Hit: ✗
+User 17670: True Item: 3940 | Top-5: [1354, 3858, 3315, 256, 80] | Hit: ✗
+User 3477: True Item: 9663 | Top-5: [994, 1354, 415, 147, 812] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 28.67it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.61s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:23<00:00,  5.10it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 2, 'rec_avg_loss': '9.0029', 'icl_avg_loss': '2.4172', 'joint_avg_loss': '11.4201'}
+100%|██████████| 76/76 [00:08<00:00,  8.85it/s]
+{'Epoch': 2, 'HIT@5': '0.0073', 'HIT@10': '0.0130', 'HIT@20': '0.0213', 'NDCG@5': '0.0040', 'NDCG@10': '0.0058', 'NDCG@20': '0.0079'}
+Top5_Sample:User 13131: True Item: 4037 | Top-5: [1354, 994, 146, 3858, 51] | Hit: ✗
+User 59: True Item: 427 | Top-5: [1354, 51, 146, 80, 3315] | Hit: ✗
+User 15586: True Item: 10558 | Top-5: [1354, 146, 3858, 80, 48] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 29.10it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.63s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.28it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 3, 'rec_avg_loss': '8.8190', 'icl_avg_loss': '2.3538', 'joint_avg_loss': '11.1728'}
+100%|██████████| 76/76 [00:08<00:00,  9.37it/s]
+{'Epoch': 3, 'HIT@5': '0.0123', 'HIT@10': '0.0203', 'HIT@20': '0.0315', 'NDCG@5': '0.0074', 'NDCG@10': '0.0100', 'NDCG@20': '0.0128'}
+Top5_Sample:User 11245: True Item: 10348 | Top-5: [1354, 415, 994, 969, 382] | Hit: ✗
+User 3283: True Item: 9531 | Top-5: [80, 1354, 48, 256, 51] | Hit: ✗
+User 12038: True Item: 7992 | Top-5: [11771, 10829, 11248, 6014, 11772] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:15<00:00, 26.98it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.70s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.29it/s]
+{'epoch': 4, 'rec_avg_loss': '8.6172', 'icl_avg_loss': '2.2870', 'joint_avg_loss': '10.9042'}
+100%|██████████| 76/76 [00:08<00:00,  8.82it/s]
+{'Epoch': 4, 'HIT@5': '0.0174', 'HIT@10': '0.0279', 'HIT@20': '0.0440', 'NDCG@5': '0.0110', 'NDCG@10': '0.0144', 'NDCG@20': '0.0184'}
+Top5_Sample:User 2675: True Item: 5354 | Top-5: [256, 80, 51, 4088, 48] | Hit: ✗
+User 11224: True Item: 8801 | Top-5: [1354, 994, 1272, 969, 256] | Hit: ✗
+User 1221: True Item: 2062 | Top-5: [986, 1079, 2061, 1316, 987] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:15<00:00, 27.90it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.71s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.43it/s]
+{'epoch': 5, 'rec_avg_loss': '8.4225', 'icl_avg_loss': '2.2394', 'joint_avg_loss': '10.6619'}
+100%|██████████| 76/76 [00:08<00:00,  9.40it/s]
+{'Epoch': 5, 'HIT@5': '0.0219', 'HIT@10': '0.0344', 'HIT@20': '0.0535', 'NDCG@5': '0.0146', 'NDCG@10': '0.0186', 'NDCG@20': '0.0234'}
+Top5_Sample:User 12260: True Item: 6646 | Top-5: [1354, 51, 969, 3315, 3858] | Hit: ✗
+User 3021: True Item: 1940 | Top-5: [969, 415, 265, 502, 156] | Hit: ✗
+User 10416: True Item: 8138 | Top-5: [256, 1354, 51, 3315, 361] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:15<00:00, 27.89it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.72s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:25<00:00,  5.00it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 6, 'rec_avg_loss': '8.2458', 'icl_avg_loss': '2.2061', 'joint_avg_loss': '10.4519'}
+100%|██████████| 76/76 [00:07<00:00,  9.79it/s]
+{'Epoch': 6, 'HIT@5': '0.0259', 'HIT@10': '0.0415', 'HIT@20': '0.0638', 'NDCG@5': '0.0172', 'NDCG@10': '0.0222', 'NDCG@20': '0.0278'}
+Top5_Sample:User 15452: True Item: 7675 | Top-5: [11906, 11062, 9077, 3932, 11248] | Hit: ✗
+User 2973: True Item: 7268 | Top-5: [51, 256, 1830, 1808, 4088] | Hit: ✗
+User 1884: True Item: 2460 | Top-5: [1354, 256, 3315, 4088, 34] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 28.91it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.84s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.38it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 7, 'rec_avg_loss': '8.0882', 'icl_avg_loss': '2.1807', 'joint_avg_loss': '10.2689'}
+100%|██████████| 76/76 [00:08<00:00,  9.35it/s]
+{'Epoch': 7, 'HIT@5': '0.0307', 'HIT@10': '0.0479', 'HIT@20': '0.0706', 'NDCG@5': '0.0205', 'NDCG@10': '0.0261', 'NDCG@20': '0.0318'}
+Top5_Sample:User 9659: True Item: 10049 | Top-5: [969, 34, 3858, 1909, 2834] | Hit: ✗
+User 3936: True Item: 4600 | Top-5: [361, 1354, 4166, 4140, 2870] | Hit: ✗
+User 223: True Item: 1886 | Top-5: [1830, 1912, 1792, 1801, 1859] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:15<00:00, 27.68it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.63s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.43it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 8, 'rec_avg_loss': '7.9463', 'icl_avg_loss': '2.1596', 'joint_avg_loss': '10.1059'}
+100%|██████████| 76/76 [00:08<00:00,  9.21it/s]
+{'Epoch': 8, 'HIT@5': '0.0353', 'HIT@10': '0.0534', 'HIT@20': '0.0770', 'NDCG@5': '0.0239', 'NDCG@10': '0.0297', 'NDCG@20': '0.0357'}
+Top5_Sample:User 12854: True Item: 4097 | Top-5: [34, 1909, 80, 2834, 440] | Hit: ✗
+User 7233: True Item: 8988 | Top-5: [868, 1909, 26, 82, 55] | Hit: ✗
+User 3599: True Item: 8839 | Top-5: [80, 477, 1909, 34, 174] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:16<00:00, 26.62it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.29it/s]
+{'epoch': 9, 'rec_avg_loss': '7.8265', 'icl_avg_loss': '2.1414', 'joint_avg_loss': '9.9679'}
+100%|██████████| 76/76 [00:07<00:00, 10.10it/s]
+{'Epoch': 9, 'HIT@5': '0.0395', 'HIT@10': '0.0588', 'HIT@20': '0.0842', 'NDCG@5': '0.0269', 'NDCG@10': '0.0331', 'NDCG@20': '0.0395'}
+Top5_Sample:User 6761: True Item: 11130 | Top-5: [361, 3184, 9145, 969, 2215] | Hit: ✗
+User 18943: True Item: 4329 | Top-5: [969, 793, 414, 3040, 755] | Hit: ✗
+User 2652: True Item: 2845 | Top-5: [34, 2877, 5, 497, 2834] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 30.24it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.59s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.59it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 10, 'rec_avg_loss': '7.7189', 'icl_avg_loss': '2.1291', 'joint_avg_loss': '9.8480'}
+100%|██████████| 76/76 [00:07<00:00,  9.91it/s]
+{'Epoch': 10, 'HIT@5': '0.0421', 'HIT@10': '0.0614', 'HIT@20': '0.0885', 'NDCG@5': '0.0289', 'NDCG@10': '0.0351', 'NDCG@20': '0.0419'}
+Top5_Sample:User 14174: True Item: 10388 | Top-5: [34, 3440, 440, 2834, 39] | Hit: ✗
+User 5915: True Item: 524 | Top-5: [34, 531, 1909, 423, 30] | Hit: ✗
+User 15275: True Item: 7081 | Top-5: [361, 3184, 2504, 969, 1182] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 30.37it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.43it/s]
+{'epoch': 11, 'rec_avg_loss': '7.6220', 'icl_avg_loss': '2.1159', 'joint_avg_loss': '9.7379'}
+100%|██████████| 76/76 [00:07<00:00,  9.97it/s]
+{'Epoch': 11, 'HIT@5': '0.0455', 'HIT@10': '0.0660', 'HIT@20': '0.0917', 'NDCG@5': '0.0313', 'NDCG@10': '0.0379', 'NDCG@20': '0.0444'}
+Top5_Sample:User 8335: True Item: 968 | Top-5: [854, 8113, 6721, 5537, 2408] | Hit: ✗
+User 1707: True Item: 7208 | Top-5: [497, 1909, 1182, 3858, 1307] | Hit: ✗
+User 8403: True Item: 1466 | Top-5: [990, 1464, 991, 1687, 987] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 29.88it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.15s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.18it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 12, 'rec_avg_loss': '7.5368', 'icl_avg_loss': '2.1076', 'joint_avg_loss': '9.6444'}
+100%|██████████| 76/76 [00:07<00:00,  9.82it/s]
+{'Epoch': 12, 'HIT@5': '0.0478', 'HIT@10': '0.0696', 'HIT@20': '0.0967', 'NDCG@5': '0.0332', 'NDCG@10': '0.0402', 'NDCG@20': '0.0470'}
+Top5_Sample:User 19040: True Item: 5575 | Top-5: [812, 3040, 969, 813, 2877] | Hit: ✗
+User 13232: True Item: 5247 | Top-5: [3315, 2742, 3858, 256, 3440] | Hit: ✗
+User 6603: True Item: 4427 | Top-5: [354, 446, 2513, 143, 5] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.28it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.36s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:23<00:00,  5.10it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 13, 'rec_avg_loss': '7.4562', 'icl_avg_loss': '2.0997', 'joint_avg_loss': '9.5559'}
+100%|██████████| 76/76 [00:07<00:00, 10.18it/s]
+{'Epoch': 13, 'HIT@5': '0.0496', 'HIT@10': '0.0711', 'HIT@20': '0.1001', 'NDCG@5': '0.0347', 'NDCG@10': '0.0416', 'NDCG@20': '0.0489'}
+Top5_Sample:User 672: True Item: 2494 | Top-5: [990, 1687, 987, 989, 1464] | Hit: ✗
+User 2063: True Item: 5541 | Top-5: [1028, 2520, 2518, 2623, 1904] | Hit: ✗
+User 8519: True Item: 1174 | Top-5: [838, 656, 1563, 816, 1184] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 28.56it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:24<00:00,  5.06it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 14, 'rec_avg_loss': '7.3866', 'icl_avg_loss': '2.0927', 'joint_avg_loss': '9.4793'}
+100%|██████████| 76/76 [00:07<00:00, 10.45it/s]
+{'Epoch': 14, 'HIT@5': '0.0520', 'HIT@10': '0.0743', 'HIT@20': '0.1033', 'NDCG@5': '0.0358', 'NDCG@10': '0.0430', 'NDCG@20': '0.0503'}
+Top5_Sample:User 1534: True Item: 1846 | Top-5: [1855, 1912, 1830, 1859, 1886] | Hit: ✗
+User 2305: True Item: 8280 | Top-5: [74, 477, 3264, 531, 423] | Hit: ✗
+User 10699: True Item: 1237 | Top-5: [156, 850, 1210, 1354, 1207] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.60s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.17it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 15, 'rec_avg_loss': '7.3194', 'icl_avg_loss': '2.0862', 'joint_avg_loss': '9.4055'}
+100%|██████████| 76/76 [00:07<00:00, 10.58it/s]
+{'Epoch': 15, 'HIT@5': '0.0536', 'HIT@10': '0.0761', 'HIT@20': '0.1061', 'NDCG@5': '0.0375', 'NDCG@10': '0.0447', 'NDCG@20': '0.0523'}
+Top5_Sample:User 11454: True Item: 2512 | Top-5: [2870, 627, 3315, 34, 4862] | Hit: ✗
+User 4959: True Item: 6518 | Top-5: [2938, 8384, 4220, 361, 4221] | Hit: ✗
+User 703: True Item: 1886 | Top-5: [146, 148, 1855, 1912, 1834] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.42it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.29it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 16, 'rec_avg_loss': '7.2607', 'icl_avg_loss': '2.0811', 'joint_avg_loss': '9.3418'}
+100%|██████████| 76/76 [00:07<00:00, 10.66it/s]
+{'Epoch': 16, 'HIT@5': '0.0556', 'HIT@10': '0.0781', 'HIT@20': '0.1084', 'NDCG@5': '0.0387', 'NDCG@10': '0.0460', 'NDCG@20': '0.0536'}
+Top5_Sample:User 9526: True Item: 1045 | Top-5: [3, 250, 415, 811, 502] | Hit: ✗
+User 4512: True Item: 1617 | Top-5: [9697, 8132, 70, 905, 9088] | Hit: ✗
+User 2385: True Item: 4070 | Top-5: [82, 26, 865, 55, 1904] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.09it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.43s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.42it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 17, 'rec_avg_loss': '7.1948', 'icl_avg_loss': '2.0772', 'joint_avg_loss': '9.2720'}
+100%|██████████| 76/76 [00:07<00:00, 10.25it/s]
+{'Epoch': 17, 'HIT@5': '0.0565', 'HIT@10': '0.0800', 'HIT@20': '0.1113', 'NDCG@5': '0.0393', 'NDCG@10': '0.0469', 'NDCG@20': '0.0548'}
+Top5_Sample:User 11991: True Item: 1058 | Top-5: [382, 1286, 1008, 221, 502] | Hit: ✗
+User 8639: True Item: 7693 | Top-5: [1909, 497, 80, 48, 2834] | Hit: ✗
+User 12460: True Item: 1489 | Top-5: [3, 1220, 250, 382, 1361] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 30.63it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.50it/s]
+{'epoch': 18, 'rec_avg_loss': '7.1414', 'icl_avg_loss': '2.0741', 'joint_avg_loss': '9.2155'}
+100%|██████████| 76/76 [00:07<00:00, 10.41it/s]
+{'Epoch': 18, 'HIT@5': '0.0569', 'HIT@10': '0.0823', 'HIT@20': '0.1130', 'NDCG@5': '0.0403', 'NDCG@10': '0.0485', 'NDCG@20': '0.0563'}
+Top5_Sample:User 18165: True Item: 9542 | Top-5: [39, 1354, 601, 627, 34] | Hit: ✗
+User 51: True Item: 40 | Top-5: [40, 6, 34, 531, 477] | Hit: ✓
+User 6449: True Item: 577 | Top-5: [3868, 812, 1604, 842, 1436] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.95it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.52s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.67it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 19, 'rec_avg_loss': '7.0966', 'icl_avg_loss': '2.0701', 'joint_avg_loss': '9.1667'}
+100%|██████████| 76/76 [00:07<00:00, 10.39it/s]
+{'Epoch': 19, 'HIT@5': '0.0601', 'HIT@10': '0.0830', 'HIT@20': '0.1143', 'NDCG@5': '0.0419', 'NDCG@10': '0.0492', 'NDCG@20': '0.0571'}
+Top5_Sample:User 12801: True Item: 10260 | Top-5: [2877, 4681, 6697, 463, 4862] | Hit: ✗
+User 10316: True Item: 459 | Top-5: [28, 731, 687, 112, 4095] | Hit: ✗
+User 5361: True Item: 6040 | Top-5: [9350, 3175, 4333, 189, 10253] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.65it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.72it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 20, 'rec_avg_loss': '7.0486', 'icl_avg_loss': '2.0681', 'joint_avg_loss': '9.1168'}
+100%|██████████| 76/76 [00:07<00:00, 10.45it/s]
+{'Epoch': 20, 'HIT@5': '0.0609', 'HIT@10': '0.0852', 'HIT@20': '0.1171', 'NDCG@5': '0.0428', 'NDCG@10': '0.0507', 'NDCG@20': '0.0587'}
+Top5_Sample:User 7079: True Item: 687 | Top-5: [318, 39, 1354, 627, 3315] | Hit: ✗
+User 17144: True Item: 555 | Top-5: [361, 627, 1436, 3868, 1829] | Hit: ✗
+User 8972: True Item: 11408 | Top-5: [897, 2457, 1671, 487, 890] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.83it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.71it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 21, 'rec_avg_loss': '7.0028', 'icl_avg_loss': '2.0640', 'joint_avg_loss': '9.0668'}
+100%|██████████| 76/76 [00:07<00:00, 10.42it/s]
+{'Epoch': 21, 'HIT@5': '0.0631', 'HIT@10': '0.0864', 'HIT@20': '0.1179', 'NDCG@5': '0.0440', 'NDCG@10': '0.0515', 'NDCG@20': '0.0594'}
+Top5_Sample:User 8898: True Item: 8608 | Top-5: [627, 318, 361, 39, 1354] | Hit: ✗
+User 5022: True Item: 3238 | Top-5: [2787, 2804, 3238, 2250, 3440] | Hit: ✓
+User 15412: True Item: 1044 | Top-5: [361, 275, 2938, 8384, 4166] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.54it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.51s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.70it/s]
+{'epoch': 22, 'rec_avg_loss': '6.9632', 'icl_avg_loss': '2.0627', 'joint_avg_loss': '9.0259'}
+100%|██████████| 76/76 [00:07<00:00, 10.47it/s]
+{'Epoch': 22, 'HIT@5': '0.0647', 'HIT@10': '0.0877', 'HIT@20': '0.1196', 'NDCG@5': '0.0451', 'NDCG@10': '0.0525', 'NDCG@20': '0.0606'}
+Top5_Sample:User 2628: True Item: 3250 | Top-5: [204, 7886, 4088, 4954, 2284] | Hit: ✗
+User 14861: True Item: 6028 | Top-5: [11858, 10820, 11696, 11235, 10814] | Hit: ✗
+User 2194: True Item: 372 | Top-5: [1546, 1203, 3356, 1602, 6957] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.70it/s]
+{'epoch': 23, 'rec_avg_loss': '6.9196', 'icl_avg_loss': '2.0597', 'joint_avg_loss': '8.9793'}
+100%|██████████| 76/76 [00:07<00:00, 10.24it/s]
+{'Epoch': 23, 'HIT@5': '0.0657', 'HIT@10': '0.0896', 'HIT@20': '0.1205', 'NDCG@5': '0.0459', 'NDCG@10': '0.0536', 'NDCG@20': '0.0614'}
+Top5_Sample:User 4178: True Item: 3764 | Top-5: [2717, 3447, 6855, 2718, 3245] | Hit: ✗
+User 14315: True Item: 119 | Top-5: [9929, 1092, 9756, 6602, 89] | Hit: ✗
+User 14805: True Item: 3162 | Top-5: [2457, 7480, 4850, 4069, 3199] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.09it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.44s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.67it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 24, 'rec_avg_loss': '6.8840', 'icl_avg_loss': '2.0561', 'joint_avg_loss': '8.9401'}
+100%|██████████| 76/76 [00:07<00:00, 10.40it/s]
+{'Epoch': 24, 'HIT@5': '0.0658', 'HIT@10': '0.0897', 'HIT@20': '0.1221', 'NDCG@5': '0.0461', 'NDCG@10': '0.0538', 'NDCG@20': '0.0620'}
+Top5_Sample:User 1378: True Item: 6548 | Top-5: [964, 966, 1709, 1285, 1159] | Hit: ✗
+User 5420: True Item: 248 | Top-5: [8822, 248, 4543, 247, 2569] | Hit: ✓
+User 6790: True Item: 1469 | Top-5: [552, 1450, 2211, 1133, 553] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.06it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.72it/s]
+{'epoch': 25, 'rec_avg_loss': '6.8454', 'icl_avg_loss': '2.0557', 'joint_avg_loss': '8.9011'}
+100%|██████████| 76/76 [00:07<00:00, 10.37it/s]
+{'Epoch': 25, 'HIT@5': '0.0663', 'HIT@10': '0.0905', 'HIT@20': '0.1236', 'NDCG@5': '0.0465', 'NDCG@10': '0.0543', 'NDCG@20': '0.0627'}
+Top5_Sample:User 5673: True Item: 2501 | Top-5: [812, 1170, 74, 3107, 1399] | Hit: ✗
+User 7541: True Item: 6247 | Top-5: [601, 4925, 5943, 3040, 10591] | Hit: ✗
+User 16476: True Item: 1729 | Top-5: [8276, 5300, 8261, 8273, 9322] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.66it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.70it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 26, 'rec_avg_loss': '6.8147', 'icl_avg_loss': '2.0530', 'joint_avg_loss': '8.8678'}
+100%|██████████| 76/76 [00:07<00:00, 10.64it/s]
+{'Epoch': 26, 'HIT@5': '0.0666', 'HIT@10': '0.0908', 'HIT@20': '0.1236', 'NDCG@5': '0.0470', 'NDCG@10': '0.0548', 'NDCG@20': '0.0631'}
+Top5_Sample:User 10854: True Item: 5352 | Top-5: [423, 3264, 74, 477, 7683] | Hit: ✗
+User 13629: True Item: 108 | Top-5: [108, 1123, 185, 497, 731] | Hit: ✓
+User 4211: True Item: 1489 | Top-5: [969, 497, 1574, 3192, 1182] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.63it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.70it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 27, 'rec_avg_loss': '6.7816', 'icl_avg_loss': '2.0524', 'joint_avg_loss': '8.8341'}
+100%|██████████| 76/76 [00:07<00:00, 10.58it/s]
+{'Epoch': 27, 'HIT@5': '0.0671', 'HIT@10': '0.0924', 'HIT@20': '0.1249', 'NDCG@5': '0.0473', 'NDCG@10': '0.0554', 'NDCG@20': '0.0636'}
+Top5_Sample:User 9778: True Item: 3051 | Top-5: [5609, 3845, 3062, 5996, 3052] | Hit: ✗
+User 6352: True Item: 927 | Top-5: [4019, 531, 518, 423, 174] | Hit: ✗
+User 3516: True Item: 2213 | Top-5: [6349, 2211, 3011, 1371, 3010] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.61it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.04s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.53it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 28, 'rec_avg_loss': '6.7480', 'icl_avg_loss': '2.0495', 'joint_avg_loss': '8.7975'}
+100%|██████████| 76/76 [00:07<00:00, 10.66it/s]
+{'Epoch': 28, 'HIT@5': '0.0683', 'HIT@10': '0.0925', 'HIT@20': '0.1255', 'NDCG@5': '0.0485', 'NDCG@10': '0.0563', 'NDCG@20': '0.0646'}
+Top5_Sample:User 14103: True Item: 8418 | Top-5: [969, 1182, 3919, 2231, 3857] | Hit: ✗
+User 1394: True Item: 3801 | Top-5: [204, 196, 6495, 552, 2647] | Hit: ✗
+User 12904: True Item: 11008 | Top-5: [2543, 799, 8277, 5300, 953] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.84it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.84s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.36it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 29, 'rec_avg_loss': '6.7180', 'icl_avg_loss': '2.0508', 'joint_avg_loss': '8.7689'}
+100%|██████████| 76/76 [00:07<00:00, 10.60it/s]
+{'Epoch': 29, 'HIT@5': '0.0686', 'HIT@10': '0.0933', 'HIT@20': '0.1251', 'NDCG@5': '0.0486', 'NDCG@10': '0.0566', 'NDCG@20': '0.0647'}
+Top5_Sample:User 16274: True Item: 7474 | Top-5: [3, 1683, 502, 3040, 415] | Hit: ✗
+User 11900: True Item: 224 | Top-5: [1683, 502, 5864, 3, 1558] | Hit: ✗
+User 6564: True Item: 26 | Top-5: [3857, 940, 3903, 3999, 3905] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:12<00:00, 33.88it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.29it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 30, 'rec_avg_loss': '6.6900', 'icl_avg_loss': '2.0490', 'joint_avg_loss': '8.7390'}
+100%|██████████| 76/76 [00:07<00:00, 10.48it/s]
+{'Epoch': 30, 'HIT@5': '0.0699', 'HIT@10': '0.0950', 'HIT@20': '0.1279', 'NDCG@5': '0.0495', 'NDCG@10': '0.0576', 'NDCG@20': '0.0658'}
+Top5_Sample:User 15478: True Item: 10656 | Top-5: [1436, 1829, 3868, 1373, 812] | Hit: ✗
+User 1204: True Item: 3183 | Top-5: [3017, 2334, 3773, 3105, 4806] | Hit: ✗
+User 17503: True Item: 8138 | Top-5: [6957, 6956, 1511, 3356, 6986] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:12<00:00, 33.03it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.20it/s]
+{'epoch': 31, 'rec_avg_loss': '6.6631', 'icl_avg_loss': '2.0473', 'joint_avg_loss': '8.7104'}
+100%|██████████| 76/76 [00:06<00:00, 11.02it/s]
+{'Epoch': 31, 'HIT@5': '0.0696', 'HIT@10': '0.0951', 'HIT@20': '0.1283', 'NDCG@5': '0.0494', 'NDCG@10': '0.0576', 'NDCG@20': '0.0659'}
+Top5_Sample:User 10334: True Item: 10448 | Top-5: [5528, 1048, 3679, 3670, 34] | Hit: ✗
+User 8197: True Item: 1064 | Top-5: [969, 275, 1044, 685, 4925] | Hit: ✗
+User 5641: True Item: 317 | Top-5: [30, 80, 309, 3371, 26] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.21it/s]
+100%|██████████| 1/1 [00:04<00:00,  4.10s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.19it/s]
+{'epoch': 32, 'rec_avg_loss': '6.6371', 'icl_avg_loss': '2.0458', 'joint_avg_loss': '8.6830'}
+100%|██████████| 76/76 [00:06<00:00, 11.04it/s]
+{'Epoch': 32, 'HIT@5': '0.0700', 'HIT@10': '0.0959', 'HIT@20': '0.1299', 'NDCG@5': '0.0501', 'NDCG@10': '0.0584', 'NDCG@20': '0.0669'}
+Top5_Sample:User 3577: True Item: 4104 | Top-5: [89, 2773, 2829, 1447, 87] | Hit: ✗
+User 13426: True Item: 3399 | Top-5: [1887, 2956, 2957, 3399, 3380] | Hit: ✓
+User 14066: True Item: 2228 | Top-5: [536, 2742, 7379, 3245, 1272] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.46it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.51s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.30it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 33, 'rec_avg_loss': '6.6178', 'icl_avg_loss': '2.0450', 'joint_avg_loss': '8.6628'}
+100%|██████████| 76/76 [00:07<00:00, 10.56it/s]
+{'Epoch': 33, 'HIT@5': '0.0701', 'HIT@10': '0.0955', 'HIT@20': '0.1295', 'NDCG@5': '0.0499', 'NDCG@10': '0.0581', 'NDCG@20': '0.0667'}
+Top5_Sample:User 2689: True Item: 8879 | Top-5: [6650, 3184, 9145, 10793, 9144] | Hit: ✗
+User 12406: True Item: 9465 | Top-5: [9465, 4221, 4220, 11352, 2938] | Hit: ✓
+User 1610: True Item: 1354 | Top-5: [196, 2988, 601, 1447, 1354] | Hit: ✓
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.49it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.45it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 34, 'rec_avg_loss': '6.5871', 'icl_avg_loss': '2.0435', 'joint_avg_loss': '8.6306'}
+100%|██████████| 76/76 [00:07<00:00, 10.15it/s]
+{'Epoch': 34, 'HIT@5': '0.0707', 'HIT@10': '0.0966', 'HIT@20': '0.1302', 'NDCG@5': '0.0504', 'NDCG@10': '0.0587', 'NDCG@20': '0.0672'}
+Top5_Sample:User 8909: True Item: 2183 | Top-5: [5805, 4765, 4343, 2734, 7848] | Hit: ✗
+User 15648: True Item: 4646 | Top-5: [969, 46, 1182, 51, 3857] | Hit: ✗
+User 15382: True Item: 419 | Top-5: [8189, 759, 7404, 414, 4180] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 30.83it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.56it/s]
+{'epoch': 35, 'rec_avg_loss': '6.5667', 'icl_avg_loss': '2.0416', 'joint_avg_loss': '8.6083'}
+100%|██████████| 76/76 [00:07<00:00, 10.40it/s]
+{'Epoch': 35, 'HIT@5': '0.0717', 'HIT@10': '0.0978', 'HIT@20': '0.1297', 'NDCG@5': '0.0509', 'NDCG@10': '0.0593', 'NDCG@20': '0.0673'}
+Top5_Sample:User 16995: True Item: 8931 | Top-5: [8931, 7320, 7855, 4543, 8668] | Hit: ✓
+User 4198: True Item: 2444 | Top-5: [9859, 2844, 8277, 2543, 464] | Hit: ✗
+User 6495: True Item: 10361 | Top-5: [82, 55, 865, 2478, 7277] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.04it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.43s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.67it/s]
+{'epoch': 36, 'rec_avg_loss': '6.5476', 'icl_avg_loss': '2.0415', 'joint_avg_loss': '8.5891'}
+100%|██████████| 76/76 [00:07<00:00, 10.37it/s]
+{'Epoch': 36, 'HIT@5': '0.0715', 'HIT@10': '0.0973', 'HIT@20': '0.1311', 'NDCG@5': '0.0509', 'NDCG@10': '0.0592', 'NDCG@20': '0.0677'}
+Top5_Sample:User 1297: True Item: 330 | Top-5: [3315, 1354, 627, 4088, 2369] | Hit: ✗
+User 6773: True Item: 6078 | Top-5: [4140, 2444, 5759, 7065, 1770] | Hit: ✗
+User 3053: True Item: 3336 | Top-5: [2280, 4646, 1354, 8999, 2508] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.10it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.43s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.72it/s]
+ 12%|█▏        | 9/76 [00:00<00:06,  9.93it/s]{'epoch': 37, 'rec_avg_loss': '6.5266', 'icl_avg_loss': '2.0394', 'joint_avg_loss': '8.5661'}
+100%|██████████| 76/76 [00:07<00:00, 10.55it/s]
+{'Epoch': 37, 'HIT@5': '0.0712', 'HIT@10': '0.0978', 'HIT@20': '0.1310', 'NDCG@5': '0.0510', 'NDCG@10': '0.0595', 'NDCG@20': '0.0679'}
+Top5_Sample:User 2307: True Item: 2553 | Top-5: [204, 5077, 3315, 3778, 6680] | Hit: ✗
+User 17215: True Item: 1400 | Top-5: [1142, 1286, 1233, 382, 809] | Hit: ✗
+User 6074: True Item: 2941 | Top-5: [3037, 93, 3978, 774, 1965] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.89it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.72it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 38, 'rec_avg_loss': '6.5036', 'icl_avg_loss': '2.0399', 'joint_avg_loss': '8.5435'}
+100%|██████████| 76/76 [00:07<00:00, 10.61it/s]
+{'Epoch': 38, 'HIT@5': '0.0721', 'HIT@10': '0.0975', 'HIT@20': '0.1321', 'NDCG@5': '0.0516', 'NDCG@10': '0.0597', 'NDCG@20': '0.0684'}
+Top5_Sample:User 2248: True Item: 8193 | Top-5: [538, 3955, 3954, 5473, 3953] | Hit: ✗
+User 10516: True Item: 5258 | Top-5: [3588, 658, 870, 5145, 522] | Hit: ✗
+User 3387: True Item: 2940 | Top-5: [969, 812, 2877, 381, 975] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.06it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 39, 'rec_avg_loss': '6.4894', 'icl_avg_loss': '2.0376', 'joint_avg_loss': '8.5270'}
+100%|██████████| 76/76 [00:07<00:00, 10.38it/s]
+{'Epoch': 39, 'HIT@5': '0.0718', 'HIT@10': '0.0989', 'HIT@20': '0.1322', 'NDCG@5': '0.0516', 'NDCG@10': '0.0603', 'NDCG@20': '0.0687'}
+Top5_Sample:User 14572: True Item: 8281 | Top-5: [10499, 8281, 9929, 7842, 7760] | Hit: ✓
+User 19362: True Item: 1692 | Top-5: [1152, 161, 165, 167, 837] | Hit: ✗
+User 18045: True Item: 11175 | Top-5: [11129, 3282, 11062, 11175, 11465] | Hit: ✓
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.86it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.47s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.73it/s]
+{'epoch': 40, 'rec_avg_loss': '6.4688', 'icl_avg_loss': '2.0363', 'joint_avg_loss': '8.5051'}
+100%|██████████| 76/76 [00:07<00:00, 10.46it/s]
+{'Epoch': 40, 'HIT@5': '0.0727', 'HIT@10': '0.0990', 'HIT@20': '0.1324', 'NDCG@5': '0.0520', 'NDCG@10': '0.0604', 'NDCG@20': '0.0689'}
+Top5_Sample:User 6337: True Item: 2589 | Top-5: [2576, 491, 3175, 2261, 326] | Hit: ✗
+User 8859: True Item: 5609 | Top-5: [1220, 1829, 1436, 1046, 1221] | Hit: ✗
+User 11443: True Item: 5394 | Top-5: [400, 4144, 9580, 813, 6260] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.03it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 41, 'rec_avg_loss': '6.4503', 'icl_avg_loss': '2.0363', 'joint_avg_loss': '8.4866'}
+100%|██████████| 76/76 [00:07<00:00, 10.38it/s]
+{'Epoch': 41, 'HIT@5': '0.0723', 'HIT@10': '0.0996', 'HIT@20': '0.1327', 'NDCG@5': '0.0518', 'NDCG@10': '0.0606', 'NDCG@20': '0.0689'}
+Top5_Sample:User 5720: True Item: 326 | Top-5: [5845, 1272, 2742, 3913, 441] | Hit: ✗
+User 821: True Item: 5177 | Top-5: [1393, 1646, 4269, 1616, 329] | Hit: ✗
+User 271: True Item: 2512 | Top-5: [414, 687, 793, 5145, 416] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.07it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+{'epoch': 42, 'rec_avg_loss': '6.4328', 'icl_avg_loss': '2.0343', 'joint_avg_loss': '8.4671'}
+100%|██████████| 76/76 [00:07<00:00, 10.49it/s]
+{'Epoch': 42, 'HIT@5': '0.0733', 'HIT@10': '0.0999', 'HIT@20': '0.1335', 'NDCG@5': '0.0523', 'NDCG@10': '0.0608', 'NDCG@20': '0.0693'}
+Top5_Sample:User 15094: True Item: 6643 | Top-5: [2787, 2250, 2788, 260, 2369] | Hit: ✗
+User 19146: True Item: 11185 | Top-5: [11759, 8801, 10413, 8117, 11543] | Hit: ✗
+User 11989: True Item: 9750 | Top-5: [3540, 3632, 3674, 3091, 3092] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.82it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.55s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.76it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 43, 'rec_avg_loss': '6.4192', 'icl_avg_loss': '2.0343', 'joint_avg_loss': '8.4535'}
+100%|██████████| 76/76 [00:07<00:00, 10.31it/s]
+{'Epoch': 43, 'HIT@5': '0.0728', 'HIT@10': '0.0987', 'HIT@20': '0.1348', 'NDCG@5': '0.0523', 'NDCG@10': '0.0606', 'NDCG@20': '0.0697'}
+Top5_Sample:User 2474: True Item: 645 | Top-5: [128, 236, 8160, 8091, 685] | Hit: ✗
+User 12015: True Item: 8142 | Top-5: [5186, 1272, 1421, 1274, 3415] | Hit: ✗
+User 13442: True Item: 1492 | Top-5: [2332, 4823, 3829, 1354, 6725] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.96it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+{'epoch': 44, 'rec_avg_loss': '6.4049', 'icl_avg_loss': '2.0329', 'joint_avg_loss': '8.4377'}
+100%|██████████| 76/76 [00:07<00:00, 10.42it/s]
+{'Epoch': 44, 'HIT@5': '0.0740', 'HIT@10': '0.0983', 'HIT@20': '0.1329', 'NDCG@5': '0.0531', 'NDCG@10': '0.0609', 'NDCG@20': '0.0696'}
+Top5_Sample:User 5322: True Item: 5652 | Top-5: [1576, 4988, 6732, 4709, 4095] | Hit: ✗
+User 9905: True Item: 3609 | Top-5: [2937, 439, 2865, 6966, 34] | Hit: ✗
+User 8240: True Item: 2863 | Top-5: [5, 40, 5998, 132, 6059] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.11it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.01s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.56it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 45, 'rec_avg_loss': '6.3882', 'icl_avg_loss': '2.0327', 'joint_avg_loss': '8.4209'}
+100%|██████████| 76/76 [00:07<00:00, 10.59it/s]
+{'Epoch': 45, 'HIT@5': '0.0746', 'HIT@10': '0.0999', 'HIT@20': '0.1340', 'NDCG@5': '0.0535', 'NDCG@10': '0.0616', 'NDCG@20': '0.0702'}
+Top5_Sample:User 16505: True Item: 28 | Top-5: [1393, 1307, 1066, 1138, 2932] | Hit: ✗
+User 12149: True Item: 816 | Top-5: [1079, 164, 839, 167, 970] | Hit: ✗
+User 4725: True Item: 3876 | Top-5: [600, 5953, 2255, 477, 2508] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.48it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.38it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 46, 'rec_avg_loss': '6.3730', 'icl_avg_loss': '2.0306', 'joint_avg_loss': '8.4036'}
+100%|██████████| 76/76 [00:07<00:00, 10.41it/s]
+{'Epoch': 46, 'HIT@5': '0.0744', 'HIT@10': '0.1010', 'HIT@20': '0.1342', 'NDCG@5': '0.0533', 'NDCG@10': '0.0618', 'NDCG@20': '0.0702'}
+Top5_Sample:User 13412: True Item: 10648 | Top-5: [1658, 990, 1225, 1146, 989] | Hit: ✗
+User 14533: True Item: 3162 | Top-5: [4244, 1825, 3153, 189, 3017] | Hit: ✗
+User 4740: True Item: 1202 | Top-5: [812, 2982, 656, 4628, 1829] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:12<00:00, 33.33it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.28it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 47, 'rec_avg_loss': '6.3609', 'icl_avg_loss': '2.0307', 'joint_avg_loss': '8.3915'}
+100%|██████████| 76/76 [00:07<00:00, 10.47it/s]
+{'Epoch': 47, 'HIT@5': '0.0745', 'HIT@10': '0.1011', 'HIT@20': '0.1346', 'NDCG@5': '0.0532', 'NDCG@10': '0.0618', 'NDCG@20': '0.0702'}
+Top5_Sample:User 10648: True Item: 1886 | Top-5: [3076, 1899, 2107, 1864, 2963] | Hit: ✗
+User 11446: True Item: 3954 | Top-5: [381, 5746, 1300, 5497, 34] | Hit: ✗
+User 8110: True Item: 11300 | Top-5: [7069, 3504, 4756, 3376, 9332] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.24it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.19it/s]
+{'epoch': 48, 'rec_avg_loss': '6.3453', 'icl_avg_loss': '2.0294', 'joint_avg_loss': '8.3747'}
+100%|██████████| 76/76 [00:07<00:00, 10.57it/s]
+{'Epoch': 48, 'HIT@5': '0.0738', 'HIT@10': '0.0994', 'HIT@20': '0.1344', 'NDCG@5': '0.0533', 'NDCG@10': '0.0616', 'NDCG@20': '0.0704'}
+Top5_Sample:User 4272: True Item: 2811 | Top-5: [3009, 3171, 2780, 6689, 4398] | Hit: ✗
+User 6821: True Item: 4213 | Top-5: [22, 1283, 544, 480, 799] | Hit: ✗
+User 16025: True Item: 11836 | Top-5: [9056, 10589, 7472, 10926, 11492] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.19it/s]
+100%|██████████| 1/1 [00:04<00:00,  4.45s/it]
+  0%|          | 1/428 [00:00<01:39,  4.27it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.23it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 49, 'rec_avg_loss': '6.3319', 'icl_avg_loss': '2.0293', 'joint_avg_loss': '8.3613'}
+100%|██████████| 76/76 [00:06<00:00, 10.86it/s]
+{'Epoch': 49, 'HIT@5': '0.0741', 'HIT@10': '0.1005', 'HIT@20': '0.1353', 'NDCG@5': '0.0534', 'NDCG@10': '0.0619', 'NDCG@20': '0.0707'}
+Top5_Sample:User 2118: True Item: 3105 | Top-5: [39, 506, 2267, 470, 3315] | Hit: ✗
+User 18168: True Item: 11900 | Top-5: [2183, 3248, 11826, 9905, 9903] | Hit: ✗
+User 10390: True Item: 329 | Top-5: [1182, 3857, 969, 4502, 46] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.89it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.57s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.35it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 50, 'rec_avg_loss': '6.3239', 'icl_avg_loss': '2.0296', 'joint_avg_loss': '8.3535'}
+100%|██████████| 76/76 [00:07<00:00, 10.71it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 50, 'HIT@5': '0.0753', 'HIT@10': '0.1004', 'HIT@20': '0.1340', 'NDCG@5': '0.0539', 'NDCG@10': '0.0620', 'NDCG@20': '0.0705'}
+Top5_Sample:User 17069: True Item: 7410 | Top-5: [8757, 2041, 8758, 8112, 7935] | Hit: ✗
+User 9138: True Item: 1166 | Top-5: [3040, 969, 250, 4908, 1163] | Hit: ✗
+User 14345: True Item: 10675 | Top-5: [3449, 10675, 9252, 133, 6002] | Hit: ✓
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.34it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.44s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.46it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 51, 'rec_avg_loss': '6.3085', 'icl_avg_loss': '2.0283', 'joint_avg_loss': '8.3369'}
+100%|██████████| 76/76 [00:07<00:00, 10.34it/s]
+{'Epoch': 51, 'HIT@5': '0.0745', 'HIT@10': '0.1014', 'HIT@20': '0.1347', 'NDCG@5': '0.0538', 'NDCG@10': '0.0624', 'NDCG@20': '0.0708'}
+Top5_Sample:User 641: True Item: 1294 | Top-5: [1220, 2982, 1847, 1299, 1221] | Hit: ✗
+User 2315: True Item: 3565 | Top-5: [334, 1727, 335, 5847, 318] | Hit: ✗
+User 5678: True Item: 10107 | Top-5: [4934, 452, 3197, 524, 185] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.62it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.56it/s]
+{'epoch': 52, 'rec_avg_loss': '6.2968', 'icl_avg_loss': '2.0275', 'joint_avg_loss': '8.3243'}
+100%|██████████| 76/76 [00:07<00:00, 10.46it/s]
+{'Epoch': 52, 'HIT@5': '0.0749', 'HIT@10': '0.1011', 'HIT@20': '0.1360', 'NDCG@5': '0.0539', 'NDCG@10': '0.0624', 'NDCG@20': '0.0712'}
+Top5_Sample:User 10679: True Item: 4407 | Top-5: [1033, 414, 1322, 1044, 755] | Hit: ✗
+User 9338: True Item: 2528 | Top-5: [5127, 189, 354, 402, 662] | Hit: ✗
+User 11639: True Item: 4925 | Top-5: [4843, 4180, 1513, 9943, 8276] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.77it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.69it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 53, 'rec_avg_loss': '6.2873', 'icl_avg_loss': '2.0275', 'joint_avg_loss': '8.3149'}
+100%|██████████| 76/76 [00:07<00:00, 10.26it/s]
+{'Epoch': 53, 'HIT@5': '0.0747', 'HIT@10': '0.1017', 'HIT@20': '0.1353', 'NDCG@5': '0.0540', 'NDCG@10': '0.0627', 'NDCG@20': '0.0712'}
+Top5_Sample:User 14251: True Item: 3895 | Top-5: [256, 4758, 5771, 632, 381] | Hit: ✗
+User 16261: True Item: 6439 | Top-5: [1182, 969, 3919, 46, 2231] | Hit: ✗
+User 3676: True Item: 8286 | Top-5: [414, 810, 966, 1160, 416] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.46s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.73it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 54, 'rec_avg_loss': '6.2763', 'icl_avg_loss': '2.0255', 'joint_avg_loss': '8.3018'}
+100%|██████████| 76/76 [00:07<00:00, 10.33it/s]
+{'Epoch': 54, 'HIT@5': '0.0749', 'HIT@10': '0.1009', 'HIT@20': '0.1347', 'NDCG@5': '0.0536', 'NDCG@10': '0.0620', 'NDCG@20': '0.0705'}
+Top5_Sample:User 5540: True Item: 5656 | Top-5: [502, 265, 3857, 3919, 501] | Hit: ✗
+User 12395: True Item: 4725 | Top-5: [4720, 4719, 11161, 4722, 10952] | Hit: ✗
+User 6964: True Item: 1727 | Top-5: [2811, 2692, 1972, 3010, 4060] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.12it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.76it/s]
+{'epoch': 55, 'rec_avg_loss': '6.2655', 'icl_avg_loss': '2.0269', 'joint_avg_loss': '8.2925'}
+100%|██████████| 76/76 [00:07<00:00, 10.42it/s]
+{'Epoch': 55, 'HIT@5': '0.0749', 'HIT@10': '0.1019', 'HIT@20': '0.1349', 'NDCG@5': '0.0537', 'NDCG@10': '0.0624', 'NDCG@20': '0.0707'}
+Top5_Sample:User 13859: True Item: 8739 | Top-5: [2394, 5904, 2369, 3155, 6196] | Hit: ✗
+User 13432: True Item: 9848 | Top-5: [196, 1272, 1180, 1274, 2326] | Hit: ✗
+User 7874: True Item: 10558 | Top-5: [2379, 5954, 8559, 8560, 4813] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 56, 'rec_avg_loss': '6.2573', 'icl_avg_loss': '2.0247', 'joint_avg_loss': '8.2820'}
+100%|██████████| 76/76 [00:07<00:00, 10.50it/s]
+{'Epoch': 56, 'HIT@5': '0.0748', 'HIT@10': '0.1009', 'HIT@20': '0.1353', 'NDCG@5': '0.0538', 'NDCG@10': '0.0623', 'NDCG@20': '0.0709'}
+Top5_Sample:User 14721: True Item: 7578 | Top-5: [4908, 2022, 7578, 437, 3039] | Hit: ✓
+User 13448: True Item: 5334 | Top-5: [7023, 10219, 7289, 11517, 11513] | Hit: ✗
+User 586: True Item: 4398 | Top-5: [5707, 2768, 2798, 3405, 2188] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.93it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 57, 'rec_avg_loss': '6.2468', 'icl_avg_loss': '2.0244', 'joint_avg_loss': '8.2712'}
+100%|██████████| 76/76 [00:07<00:00, 10.38it/s]
+{'Epoch': 57, 'HIT@5': '0.0747', 'HIT@10': '0.1031', 'HIT@20': '0.1357', 'NDCG@5': '0.0541', 'NDCG@10': '0.0633', 'NDCG@20': '0.0715'}
+Top5_Sample:User 18919: True Item: 4720 | Top-5: [4720, 9821, 9855, 9811, 11161] | Hit: ✓
+User 16475: True Item: 7613 | Top-5: [5826, 8818, 11454, 8810, 6852] | Hit: ✗
+User 3519: True Item: 5040 | Top-5: [5109, 463, 892, 7589, 115] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.07it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.56s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.76it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 58, 'rec_avg_loss': '6.2346', 'icl_avg_loss': '2.0244', 'joint_avg_loss': '8.2590'}
+100%|██████████| 76/76 [00:07<00:00, 10.46it/s]
+{'Epoch': 58, 'HIT@5': '0.0752', 'HIT@10': '0.1025', 'HIT@20': '0.1348', 'NDCG@5': '0.0544', 'NDCG@10': '0.0631', 'NDCG@20': '0.0713'}
+Top5_Sample:User 4631: True Item: 1224 | Top-5: [3174, 991, 1564, 2555, 232] | Hit: ✗
+User 5790: True Item: 3199 | Top-5: [7353, 5143, 6197, 464, 4132] | Hit: ✗
+User 9105: True Item: 361 | Top-5: [8618, 8122, 7191, 5017, 7905] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+{'epoch': 59, 'rec_avg_loss': '6.2280', 'icl_avg_loss': '2.0231', 'joint_avg_loss': '8.2511'}
+100%|██████████| 76/76 [00:07<00:00, 10.52it/s]
+{'Epoch': 59, 'HIT@5': '0.0753', 'HIT@10': '0.1009', 'HIT@20': '0.1359', 'NDCG@5': '0.0541', 'NDCG@10': '0.0624', 'NDCG@20': '0.0712'}
+Top5_Sample:User 11633: True Item: 8742 | Top-5: [4925, 7348, 9062, 9934, 8062] | Hit: ✗
+User 9286: True Item: 2061 | Top-5: [964, 1159, 5863, 1487, 6702] | Hit: ✗
+User 11715: True Item: 1578 | Top-5: [6072, 4226, 4732, 3642, 7299] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.34it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.76it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 60, 'rec_avg_loss': '6.2213', 'icl_avg_loss': '2.0235', 'joint_avg_loss': '8.2448'}
+100%|██████████| 76/76 [00:07<00:00, 10.28it/s]
+{'Epoch': 60, 'HIT@5': '0.0744', 'HIT@10': '0.1011', 'HIT@20': '0.1357', 'NDCG@5': '0.0541', 'NDCG@10': '0.0627', 'NDCG@20': '0.0714'}
+Top5_Sample:User 17007: True Item: 339 | Top-5: [7062, 5488, 4144, 4051, 421] | Hit: ✗
+User 17777: True Item: 545 | Top-5: [6957, 6956, 6885, 1511, 6942] | Hit: ✗
+User 15505: True Item: 1615 | Top-5: [4923, 373, 8298, 372, 632] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.00it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.30s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.64it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 61, 'rec_avg_loss': '6.2130', 'icl_avg_loss': '2.0231', 'joint_avg_loss': '8.2360'}
+100%|██████████| 76/76 [00:07<00:00, 10.58it/s]
+{'Epoch': 61, 'HIT@5': '0.0753', 'HIT@10': '0.1019', 'HIT@20': '0.1370', 'NDCG@5': '0.0543', 'NDCG@10': '0.0629', 'NDCG@20': '0.0718'}
+Top5_Sample:User 11162: True Item: 361 | Top-5: [2379, 1266, 318, 3752, 361] | Hit: ✓
+User 1054: True Item: 5831 | Top-5: [1679, 425, 5847, 424, 1084] | Hit: ✗
+User 3960: True Item: 10063 | Top-5: [522, 3999, 3457, 3647, 9083] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.09it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.03s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.51it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 62, 'rec_avg_loss': '6.1973', 'icl_avg_loss': '2.0220', 'joint_avg_loss': '8.2193'}
+100%|██████████| 76/76 [00:07<00:00, 10.47it/s]
+{'Epoch': 62, 'HIT@5': '0.0755', 'HIT@10': '0.1028', 'HIT@20': '0.1363', 'NDCG@5': '0.0544', 'NDCG@10': '0.0632', 'NDCG@20': '0.0716'}
+Top5_Sample:User 1745: True Item: 4717 | Top-5: [2280, 1354, 1679, 5847, 1766] | Hit: ✗
+User 18886: True Item: 10251 | Top-5: [6957, 6956, 6885, 1511, 5034] | Hit: ✗
+User 853: True Item: 5378 | Top-5: [2705, 6670, 5316, 2520, 7950] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:12<00:00, 33.23it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.01s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.33it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 63, 'rec_avg_loss': '6.1893', 'icl_avg_loss': '2.0222', 'joint_avg_loss': '8.2115'}
+100%|██████████| 76/76 [00:07<00:00, 10.48it/s]
+{'Epoch': 63, 'HIT@5': '0.0754', 'HIT@10': '0.1017', 'HIT@20': '0.1360', 'NDCG@5': '0.0545', 'NDCG@10': '0.0630', 'NDCG@20': '0.0716'}
+Top5_Sample:User 17648: True Item: 9921 | Top-5: [9911, 11810, 9919, 1015, 9921] | Hit: ✓
+User 14976: True Item: 2511 | Top-5: [969, 3857, 3858, 1182, 1307] | Hit: ✗
+User 15278: True Item: 8963 | Top-5: [2228, 8282, 1625, 9351, 9903] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:12<00:00, 33.54it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.25it/s]
+{'epoch': 64, 'rec_avg_loss': '6.1893', 'icl_avg_loss': '2.0212', 'joint_avg_loss': '8.2106'}
+100%|██████████| 76/76 [00:07<00:00, 10.27it/s]
+{'Epoch': 64, 'HIT@5': '0.0761', 'HIT@10': '0.1027', 'HIT@20': '0.1357', 'NDCG@5': '0.0549', 'NDCG@10': '0.0635', 'NDCG@20': '0.0718'}
+Top5_Sample:User 2708: True Item: 3170 | Top-5: [6684, 3880, 2047, 4193, 4189] | Hit: ✗
+User 3227: True Item: 870 | Top-5: [510, 684, 5143, 5120, 6633] | Hit: ✗
+User 4474: True Item: 5432 | Top-5: [2623, 5172, 1540, 2518, 923] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:12<00:00, 33.25it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.22s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:23<00:00,  5.15it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 65, 'rec_avg_loss': '6.1761', 'icl_avg_loss': '2.0197', 'joint_avg_loss': '8.1958'}
+100%|██████████| 76/76 [00:06<00:00, 10.91it/s]
+{'Epoch': 65, 'HIT@5': '0.0761', 'HIT@10': '0.1033', 'HIT@20': '0.1366', 'NDCG@5': '0.0547', 'NDCG@10': '0.0635', 'NDCG@20': '0.0719'}
+Top5_Sample:User 2298: True Item: 894 | Top-5: [587, 507, 743, 5073, 2739] | Hit: ✗
+User 3049: True Item: 276 | Top-5: [276, 4614, 1028, 1248, 2623] | Hit: ✓
+User 15567: True Item: 9427 | Top-5: [799, 128, 8382, 510, 93] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.06it/s]
+100%|██████████| 1/1 [00:04<00:00,  4.21s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.24it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 66, 'rec_avg_loss': '6.1692', 'icl_avg_loss': '2.0184', 'joint_avg_loss': '8.1876'}
+100%|██████████| 76/76 [00:06<00:00, 10.89it/s]
+{'Epoch': 66, 'HIT@5': '0.0759', 'HIT@10': '0.1028', 'HIT@20': '0.1372', 'NDCG@5': '0.0547', 'NDCG@10': '0.0633', 'NDCG@20': '0.0720'}
+Top5_Sample:User 18347: True Item: 5843 | Top-5: [250, 1162, 415, 418, 3] | Hit: ✗
+User 8656: True Item: 10985 | Top-5: [3316, 5890, 34, 622, 42] | Hit: ✗
+User 1336: True Item: 6481 | Top-5: [2228, 9531, 768, 10641, 1624] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:14<00:00, 30.48it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.52s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.40it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 67, 'rec_avg_loss': '6.1636', 'icl_avg_loss': '2.0208', 'joint_avg_loss': '8.1844'}
+100%|██████████| 76/76 [00:07<00:00, 10.62it/s]
+{'Epoch': 67, 'HIT@5': '0.0753', 'HIT@10': '0.1024', 'HIT@20': '0.1356', 'NDCG@5': '0.0544', 'NDCG@10': '0.0632', 'NDCG@20': '0.0716'}
+Top5_Sample:User 14154: True Item: 9224 | Top-5: [9224, 10057, 4528, 2411, 151] | Hit: ✓
+User 13169: True Item: 4292 | Top-5: [1071, 1140, 1741, 1138, 1139] | Hit: ✗
+User 7208: True Item: 901 | Top-5: [440, 2613, 866, 6785, 6966] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.48it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.52it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 68, 'rec_avg_loss': '6.1575', 'icl_avg_loss': '2.0208', 'joint_avg_loss': '8.1783'}
+100%|██████████| 76/76 [00:07<00:00, 10.70it/s]
+{'Epoch': 68, 'HIT@5': '0.0773', 'HIT@10': '0.1029', 'HIT@20': '0.1372', 'NDCG@5': '0.0558', 'NDCG@10': '0.0640', 'NDCG@20': '0.0726'}
+Top5_Sample:User 18660: True Item: 1203 | Top-5: [3343, 3321, 6029, 2378, 3057] | Hit: ✗
+User 12965: True Item: 3651 | Top-5: [274, 3931, 273, 3140, 272] | Hit: ✗
+User 13925: True Item: 1740 | Top-5: [4682, 11915, 9952, 11771, 1740] | Hit: ✓
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.56it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.59it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 69, 'rec_avg_loss': '6.1519', 'icl_avg_loss': '2.0205', 'joint_avg_loss': '8.1725'}
+100%|██████████| 76/76 [00:07<00:00, 10.29it/s]
+{'Epoch': 69, 'HIT@5': '0.0768', 'HIT@10': '0.1024', 'HIT@20': '0.1372', 'NDCG@5': '0.0555', 'NDCG@10': '0.0638', 'NDCG@20': '0.0726'}
+Top5_Sample:User 2155: True Item: 45 | Top-5: [865, 2478, 4746, 1206, 8164] | Hit: ✗
+User 10085: True Item: 8153 | Top-5: [5759, 5218, 8273, 7820, 5230] | Hit: ✗
+User 9211: True Item: 5929 | Top-5: [3140, 752, 4248, 3931, 4993] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.44s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 70, 'rec_avg_loss': '6.1451', 'icl_avg_loss': '2.0184', 'joint_avg_loss': '8.1635'}
+100%|██████████| 76/76 [00:07<00:00, 10.21it/s]
+{'Epoch': 70, 'HIT@5': '0.0751', 'HIT@10': '0.1032', 'HIT@20': '0.1360', 'NDCG@5': '0.0543', 'NDCG@10': '0.0634', 'NDCG@20': '0.0716'}
+Top5_Sample:User 10567: True Item: 6562 | Top-5: [5276, 3759, 2391, 1469, 9352] | Hit: ✗
+User 12357: True Item: 785 | Top-5: [497, 799, 3968, 22, 464] | Hit: ✗
+User 10084: True Item: 7388 | Top-5: [11048, 1203, 4540, 3510, 2232] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.63it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.73it/s]
+{'epoch': 71, 'rec_avg_loss': '6.1377', 'icl_avg_loss': '2.0172', 'joint_avg_loss': '8.1549'}
+100%|██████████| 76/76 [00:07<00:00, 10.41it/s]
+{'Epoch': 71, 'HIT@5': '0.0767', 'HIT@10': '0.1034', 'HIT@20': '0.1364', 'NDCG@5': '0.0551', 'NDCG@10': '0.0637', 'NDCG@20': '0.0720'}
+Top5_Sample:User 18044: True Item: 7322 | Top-5: [11465, 11175, 11129, 7322, 10912] | Hit: ✓
+User 14620: True Item: 3850 | Top-5: [7703, 11468, 3535, 5847, 7753] | Hit: ✗
+User 4120: True Item: 3832 | Top-5: [5582, 11840, 6164, 11787, 10787] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.58it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.46s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 72, 'rec_avg_loss': '6.1317', 'icl_avg_loss': '2.0176', 'joint_avg_loss': '8.1493'}
+100%|██████████| 76/76 [00:07<00:00, 10.42it/s]
+{'Epoch': 72, 'HIT@5': '0.0761', 'HIT@10': '0.1036', 'HIT@20': '0.1372', 'NDCG@5': '0.0553', 'NDCG@10': '0.0642', 'NDCG@20': '0.0727'}
+Top5_Sample:User 16518: True Item: 128 | Top-5: [2255, 3526, 7012, 7700, 2260] | Hit: ✗
+User 14529: True Item: 8618 | Top-5: [8618, 7191, 8122, 5017, 11274] | Hit: ✓
+User 15416: True Item: 6134 | Top-5: [4422, 11573, 11583, 11713, 3809] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.83it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.47s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 73, 'rec_avg_loss': '6.1221', 'icl_avg_loss': '2.0175', 'joint_avg_loss': '8.1396'}
+100%|██████████| 76/76 [00:07<00:00, 10.43it/s]
+{'Epoch': 73, 'HIT@5': '0.0759', 'HIT@10': '0.1034', 'HIT@20': '0.1360', 'NDCG@5': '0.0547', 'NDCG@10': '0.0636', 'NDCG@20': '0.0718'}
+Top5_Sample:User 9004: True Item: 10412 | Top-5: [5721, 792, 10048, 9312, 1913] | Hit: ✗
+User 12583: True Item: 1153 | Top-5: [6038, 1187, 2569, 1186, 1185] | Hit: ✗
+User 11072: True Item: 10181 | Top-5: [7378, 9411, 1450, 8574, 8600] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.24it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.47s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 74, 'rec_avg_loss': '6.1186', 'icl_avg_loss': '2.0172', 'joint_avg_loss': '8.1359'}
+100%|██████████| 76/76 [00:07<00:00, 10.30it/s]
+{'Epoch': 74, 'HIT@5': '0.0770', 'HIT@10': '0.1038', 'HIT@20': '0.1374', 'NDCG@5': '0.0553', 'NDCG@10': '0.0640', 'NDCG@20': '0.0725'}
+Top5_Sample:User 2447: True Item: 624 | Top-5: [767, 4605, 3628, 2733, 766] | Hit: ✗
+User 7994: True Item: 2969 | Top-5: [10152, 658, 5236, 464, 6805] | Hit: ✗
+User 13807: True Item: 4166 | Top-5: [586, 261, 1707, 1307, 1071] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.13it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.38s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 75, 'rec_avg_loss': '6.1078', 'icl_avg_loss': '2.0179', 'joint_avg_loss': '8.1257'}
+100%|██████████| 76/76 [00:07<00:00, 10.22it/s]
+{'Epoch': 75, 'HIT@5': '0.0766', 'HIT@10': '0.1040', 'HIT@20': '0.1379', 'NDCG@5': '0.0554', 'NDCG@10': '0.0643', 'NDCG@20': '0.0728'}
+Top5_Sample:User 4438: True Item: 8299 | Top-5: [1766, 2518, 5071, 5383, 5832] | Hit: ✗
+User 12653: True Item: 1467 | Top-5: [231, 814, 1403, 816, 777] | Hit: ✗
+User 18247: True Item: 11615 | Top-5: [7921, 10332, 3238, 10112, 3844] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.88it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.47s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 76, 'rec_avg_loss': '6.1045', 'icl_avg_loss': '2.0171', 'joint_avg_loss': '8.1216'}
+100%|██████████| 76/76 [00:07<00:00, 10.35it/s]
+{'Epoch': 76, 'HIT@5': '0.0753', 'HIT@10': '0.1028', 'HIT@20': '0.1369', 'NDCG@5': '0.0546', 'NDCG@10': '0.0635', 'NDCG@20': '0.0721'}
+Top5_Sample:User 8812: True Item: 7446 | Top-5: [4022, 8106, 7981, 5070, 5153] | Hit: ✗
+User 1709: True Item: 6153 | Top-5: [5568, 3082, 11013, 11261, 10352] | Hit: ✗
+User 3373: True Item: 59 | Top-5: [48, 26, 4095, 7207, 7060] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.80it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.52s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.70it/s]
+{'epoch': 77, 'rec_avg_loss': '6.0958', 'icl_avg_loss': '2.0149', 'joint_avg_loss': '8.1107'}
+100%|██████████| 76/76 [00:07<00:00, 10.36it/s]
+{'Epoch': 77, 'HIT@5': '0.0772', 'HIT@10': '0.1039', 'HIT@20': '0.1375', 'NDCG@5': '0.0555', 'NDCG@10': '0.0641', 'NDCG@20': '0.0726'}
+Top5_Sample:User 6204: True Item: 7238 | Top-5: [11149, 510, 7520, 74, 400] | Hit: ✗
+User 5306: True Item: 4560 | Top-5: [248, 4560, 247, 5041, 2573] | Hit: ✓
+User 7011: True Item: 6822 | Top-5: [2516, 354, 446, 402, 5242] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.17it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.02s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.56it/s]
+{'epoch': 78, 'rec_avg_loss': '6.0957', 'icl_avg_loss': '2.0155', 'joint_avg_loss': '8.1111'}
+100%|██████████| 76/76 [00:07<00:00, 10.60it/s]
+{'Epoch': 78, 'HIT@5': '0.0770', 'HIT@10': '0.1044', 'HIT@20': '0.1366', 'NDCG@5': '0.0555', 'NDCG@10': '0.0643', 'NDCG@20': '0.0724'}
+Top5_Sample:User 634: True Item: 2409 | Top-5: [5149, 5150, 8108, 6721, 8806] | Hit: ✗
+User 6943: True Item: 6351 | Top-5: [262, 2997, 8631, 6346, 5418] | Hit: ✗
+User 12487: True Item: 4703 | Top-5: [3322, 214, 1472, 4855, 5351] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.90it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.84s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.37it/s]
+{'epoch': 79, 'rec_avg_loss': '6.0849', 'icl_avg_loss': '2.0149', 'joint_avg_loss': '8.0997'}
+100%|██████████| 76/76 [00:07<00:00, 10.57it/s]
+{'Epoch': 79, 'HIT@5': '0.0763', 'HIT@10': '0.1026', 'HIT@20': '0.1364', 'NDCG@5': '0.0552', 'NDCG@10': '0.0637', 'NDCG@20': '0.0722'}
+Top5_Sample:User 14457: True Item: 10708 | Top-5: [497, 83, 4431, 6180, 81] | Hit: ✗
+User 16081: True Item: 3975 | Top-5: [1182, 969, 46, 4216, 3919] | Hit: ✗
+User 17837: True Item: 8811 | Top-5: [8618, 11274, 7191, 11147, 8810] | Hit: ✗
+EarlyStopping counter: 4 out of 40
+100%|██████████| 428/428 [00:12<00:00, 35.14it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.28it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 80, 'rec_avg_loss': '6.0866', 'icl_avg_loss': '2.0162', 'joint_avg_loss': '8.1028'}
+100%|██████████| 76/76 [00:07<00:00, 10.42it/s]
+{'Epoch': 80, 'HIT@5': '0.0758', 'HIT@10': '0.1032', 'HIT@20': '0.1360', 'NDCG@5': '0.0553', 'NDCG@10': '0.0641', 'NDCG@20': '0.0724'}
+Top5_Sample:User 770: True Item: 4958 | Top-5: [5, 10362, 3635, 6, 40] | Hit: ✗
+User 16115: True Item: 957 | Top-5: [11137, 8699, 9460, 4973, 10846] | Hit: ✗
+User 1694: True Item: 7126 | Top-5: [1203, 6888, 6001, 1546, 6893] | Hit: ✗
+EarlyStopping counter: 5 out of 40
+100%|██████████| 428/428 [00:12<00:00, 34.15it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.19it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 81, 'rec_avg_loss': '6.0833', 'icl_avg_loss': '2.0149', 'joint_avg_loss': '8.0983'}
+100%|██████████| 76/76 [00:07<00:00, 10.65it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 81, 'HIT@5': '0.0756', 'HIT@10': '0.1037', 'HIT@20': '0.1371', 'NDCG@5': '0.0550', 'NDCG@10': '0.0641', 'NDCG@20': '0.0725'}
+Top5_Sample:User 10935: True Item: 6727 | Top-5: [2749, 2754, 2753, 3473, 3715] | Hit: ✗
+User 1926: True Item: 3952 | Top-5: [1350, 2665, 74, 1028, 1825] | Hit: ✗
+User 5727: True Item: 865 | Top-5: [1904, 865, 2741, 82, 55] | Hit: ✓
+EarlyStopping counter: 6 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.89it/s]
+100%|██████████| 1/1 [00:04<00:00,  4.38s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.22it/s]
+{'epoch': 82, 'rec_avg_loss': '6.0730', 'icl_avg_loss': '2.0158', 'joint_avg_loss': '8.0888'}
+100%|██████████| 76/76 [00:06<00:00, 10.88it/s]
+{'Epoch': 82, 'HIT@5': '0.0753', 'HIT@10': '0.1027', 'HIT@20': '0.1361', 'NDCG@5': '0.0549', 'NDCG@10': '0.0637', 'NDCG@20': '0.0722'}
+Top5_Sample:User 13771: True Item: 6828 | Top-5: [9694, 6827, 5196, 8817, 8122] | Hit: ✗
+User 2807: True Item: 3001 | Top-5: [1341, 256, 4088, 51, 1954] | Hit: ✗
+User 3659: True Item: 3124 | Top-5: [7665, 4406, 2343, 10346, 2349] | Hit: ✗
+EarlyStopping counter: 7 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.34it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.33it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 83, 'rec_avg_loss': '6.0712', 'icl_avg_loss': '2.0150', 'joint_avg_loss': '8.0862'}
+100%|██████████| 76/76 [00:07<00:00, 10.38it/s]
+{'Epoch': 83, 'HIT@5': '0.0762', 'HIT@10': '0.1035', 'HIT@20': '0.1376', 'NDCG@5': '0.0556', 'NDCG@10': '0.0643', 'NDCG@20': '0.0729'}
+Top5_Sample:User 553: True Item: 568 | Top-5: [27, 1123, 34, 1602, 4166] | Hit: ✗
+User 2582: True Item: 1465 | Top-5: [1085, 1114, 1086, 1438, 1364] | Hit: ✗
+User 18820: True Item: 11515 | Top-5: [11515, 9923, 9918, 11811, 9921] | Hit: ✓
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 30.93it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.57s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.50it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 84, 'rec_avg_loss': '6.0665', 'icl_avg_loss': '2.0138', 'joint_avg_loss': '8.0803'}
+100%|██████████| 76/76 [00:07<00:00, 10.37it/s]
+{'Epoch': 84, 'HIT@5': '0.0759', 'HIT@10': '0.1030', 'HIT@20': '0.1382', 'NDCG@5': '0.0554', 'NDCG@10': '0.0641', 'NDCG@20': '0.0730'}
+Top5_Sample:User 3076: True Item: 615 | Top-5: [1308, 1393, 3136, 3192, 5434] | Hit: ✗
+User 18660: True Item: 1203 | Top-5: [3343, 6029, 3321, 3057, 2378] | Hit: ✗
+User 15624: True Item: 5117 | Top-5: [448, 6327, 9495, 464, 2834] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.25it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.60it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 85, 'rec_avg_loss': '6.0560', 'icl_avg_loss': '2.0158', 'joint_avg_loss': '8.0718'}
+100%|██████████| 76/76 [00:07<00:00, 10.31it/s]
+{'Epoch': 85, 'HIT@5': '0.0759', 'HIT@10': '0.1029', 'HIT@20': '0.1371', 'NDCG@5': '0.0551', 'NDCG@10': '0.0639', 'NDCG@20': '0.0725'}
+Top5_Sample:User 16888: True Item: 329 | Top-5: [329, 961, 1681, 1651, 1688] | Hit: ✓
+User 13464: True Item: 149 | Top-5: [148, 149, 1914, 2156, 1989] | Hit: ✓
+User 13290: True Item: 3868 | Top-5: [5222, 4925, 1371, 2554, 3243] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.94it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.71it/s]
+{'epoch': 86, 'rec_avg_loss': '6.0535', 'icl_avg_loss': '2.0128', 'joint_avg_loss': '8.0663'}
+100%|██████████| 76/76 [00:07<00:00, 10.19it/s]
+{'Epoch': 86, 'HIT@5': '0.0776', 'HIT@10': '0.1039', 'HIT@20': '0.1383', 'NDCG@5': '0.0563', 'NDCG@10': '0.0647', 'NDCG@20': '0.0733'}
+Top5_Sample:User 17941: True Item: 3120 | Top-5: [8347, 274, 4527, 2497, 3140] | Hit: ✗
+User 2110: True Item: 2574 | Top-5: [1266, 4687, 1844, 4695, 11674] | Hit: ✗
+User 1106: True Item: 1850 | Top-5: [1859, 1855, 1959, 1914, 1912] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.64it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.71it/s]
+{'epoch': 87, 'rec_avg_loss': '6.0513', 'icl_avg_loss': '2.0129', 'joint_avg_loss': '8.0642'}
+100%|██████████| 76/76 [00:07<00:00, 10.29it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 87, 'HIT@5': '0.0773', 'HIT@10': '0.1036', 'HIT@20': '0.1379', 'NDCG@5': '0.0559', 'NDCG@10': '0.0644', 'NDCG@20': '0.0730'}
+Top5_Sample:User 1836: True Item: 275 | Top-5: [3309, 7064, 4622, 9183, 91] | Hit: ✗
+User 3446: True Item: 2986 | Top-5: [1354, 39, 318, 1447, 34] | Hit: ✗
+User 5152: True Item: 7353 | Top-5: [4069, 4051, 5488, 7062, 10940] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.88it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+{'epoch': 88, 'rec_avg_loss': '6.0387', 'icl_avg_loss': '2.0130', 'joint_avg_loss': '8.0517'}
+100%|██████████| 76/76 [00:07<00:00, 10.52it/s]
+{'Epoch': 88, 'HIT@5': '0.0774', 'HIT@10': '0.1047', 'HIT@20': '0.1374', 'NDCG@5': '0.0559', 'NDCG@10': '0.0646', 'NDCG@20': '0.0728'}
+Top5_Sample:User 5769: True Item: 7082 | Top-5: [10230, 10228, 2092, 10229, 4969] | Hit: ✗
+User 2597: True Item: 1953 | Top-5: [3630, 385, 5981, 9714, 3464] | Hit: ✗
+User 10623: True Item: 9168 | Top-5: [4246, 396, 6369, 334, 8844] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.54it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 89, 'rec_avg_loss': '6.0380', 'icl_avg_loss': '2.0123', 'joint_avg_loss': '8.0503'}
+100%|██████████| 76/76 [00:07<00:00, 10.57it/s]
+{'Epoch': 89, 'HIT@5': '0.0763', 'HIT@10': '0.1048', 'HIT@20': '0.1384', 'NDCG@5': '0.0554', 'NDCG@10': '0.0645', 'NDCG@20': '0.0729'}
+Top5_Sample:User 2570: True Item: 4827 | Top-5: [10683, 9703, 8347, 5644, 3289] | Hit: ✗
+User 17635: True Item: 11906 | Top-5: [11465, 10842, 11129, 9872, 11061] | Hit: ✗
+User 9111: True Item: 21 | Top-5: [1546, 1602, 6932, 6886, 6887] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.48it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.44s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.75it/s]
+{'epoch': 90, 'rec_avg_loss': '6.0364', 'icl_avg_loss': '2.0141', 'joint_avg_loss': '8.0505'}
+100%|██████████| 76/76 [00:07<00:00, 10.46it/s]
+{'Epoch': 90, 'HIT@5': '0.0771', 'HIT@10': '0.1046', 'HIT@20': '0.1383', 'NDCG@5': '0.0558', 'NDCG@10': '0.0647', 'NDCG@20': '0.0731'}
+Top5_Sample:User 11242: True Item: 339 | Top-5: [1703, 1011, 656, 762, 974] | Hit: ✗
+User 11569: True Item: 3661 | Top-5: [3345, 3089, 4160, 3937, 2461] | Hit: ✗
+User 16128: True Item: 3174 | Top-5: [1464, 4602, 1178, 1687, 1227] | Hit: ✗
+EarlyStopping counter: 4 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.35it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.74it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 91, 'rec_avg_loss': '6.0393', 'icl_avg_loss': '2.0117', 'joint_avg_loss': '8.0510'}
+100%|██████████| 76/76 [00:07<00:00, 10.37it/s]
+{'Epoch': 91, 'HIT@5': '0.0763', 'HIT@10': '0.1032', 'HIT@20': '0.1382', 'NDCG@5': '0.0555', 'NDCG@10': '0.0642', 'NDCG@20': '0.0730'}
+Top5_Sample:User 10712: True Item: 10559 | Top-5: [3643, 747, 5918, 11057, 8184] | Hit: ✗
+User 12541: True Item: 1201 | Top-5: [1687, 1464, 1227, 991, 4602] | Hit: ✗
+User 6931: True Item: 3569 | Top-5: [9462, 3625, 10723, 5528, 2912] | Hit: ✗
+EarlyStopping counter: 5 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.93it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.43s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.73it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 92, 'rec_avg_loss': '6.0293', 'icl_avg_loss': '2.0118', 'joint_avg_loss': '8.0411'}
+100%|██████████| 76/76 [00:07<00:00, 10.26it/s]
+{'Epoch': 92, 'HIT@5': '0.0769', 'HIT@10': '0.1036', 'HIT@20': '0.1379', 'NDCG@5': '0.0556', 'NDCG@10': '0.0642', 'NDCG@20': '0.0728'}
+Top5_Sample:User 8432: True Item: 11000 | Top-5: [6285, 4285, 11338, 4515, 1619] | Hit: ✗
+User 3857: True Item: 4364 | Top-5: [9788, 1066, 4551, 9888, 7370] | Hit: ✗
+User 8531: True Item: 4285 | Top-5: [2161, 995, 2366, 1612, 1241] | Hit: ✗
+EarlyStopping counter: 6 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.79it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.73it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 93, 'rec_avg_loss': '6.0308', 'icl_avg_loss': '2.0113', 'joint_avg_loss': '8.0420'}
+100%|██████████| 76/76 [00:07<00:00, 10.44it/s]
+{'Epoch': 93, 'HIT@5': '0.0771', 'HIT@10': '0.1039', 'HIT@20': '0.1368', 'NDCG@5': '0.0558', 'NDCG@10': '0.0644', 'NDCG@20': '0.0727'}
+Top5_Sample:User 3294: True Item: 1039 | Top-5: [4294, 5293, 9869, 735, 4293] | Hit: ✗
+User 18400: True Item: 4254 | Top-5: [149, 1908, 1914, 1989, 1187] | Hit: ✗
+User 3766: True Item: 9884 | Top-5: [1012, 1026, 9730, 2552, 1829] | Hit: ✗
+EarlyStopping counter: 7 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.14s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.66it/s]
+{'epoch': 94, 'rec_avg_loss': '6.0224', 'icl_avg_loss': '2.0112', 'joint_avg_loss': '8.0336'}
+100%|██████████| 76/76 [00:07<00:00, 10.26it/s]
+{'Epoch': 94, 'HIT@5': '0.0769', 'HIT@10': '0.1035', 'HIT@20': '0.1366', 'NDCG@5': '0.0556', 'NDCG@10': '0.0642', 'NDCG@20': '0.0726'}
+Top5_Sample:User 6805: True Item: 4735 | Top-5: [9648, 8374, 4533, 72, 8697] | Hit: ✗
+User 17481: True Item: 768 | Top-5: [414, 1160, 755, 7362, 416] | Hit: ✗
+User 7249: True Item: 5198 | Top-5: [477, 662, 3264, 3193, 189] | Hit: ✗
+EarlyStopping counter: 8 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.54it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.01s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.44it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 95, 'rec_avg_loss': '6.0148', 'icl_avg_loss': '2.0127', 'joint_avg_loss': '8.0276'}
+100%|██████████| 76/76 [00:07<00:00, 10.25it/s]
+{'Epoch': 95, 'HIT@5': '0.0785', 'HIT@10': '0.1045', 'HIT@20': '0.1372', 'NDCG@5': '0.0562', 'NDCG@10': '0.0645', 'NDCG@20': '0.0728'}
+Top5_Sample:User 3427: True Item: 3492 | Top-5: [1921, 2129, 10136, 3283, 1804] | Hit: ✗
+User 19320: True Item: 8828 | Top-5: [4506, 11795, 11527, 8118, 11542] | Hit: ✗
+User 1386: True Item: 2271 | Top-5: [4088, 196, 256, 3017, 6775] | Hit: ✗
+EarlyStopping counter: 9 out of 40
+100%|██████████| 428/428 [00:12<00:00, 33.01it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.12s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.30it/s]
+{'epoch': 96, 'rec_avg_loss': '6.0168', 'icl_avg_loss': '2.0123', 'joint_avg_loss': '8.0291'}
+100%|██████████| 76/76 [00:07<00:00, 10.53it/s]
+{'Epoch': 96, 'HIT@5': '0.0775', 'HIT@10': '0.1037', 'HIT@20': '0.1383', 'NDCG@5': '0.0559', 'NDCG@10': '0.0643', 'NDCG@20': '0.0730'}
+Top5_Sample:User 16790: True Item: 727 | Top-5: [464, 8241, 11397, 7354, 497] | Hit: ✗
+User 11991: True Item: 1058 | Top-5: [1744, 5888, 382, 2060, 5556] | Hit: ✗
+User 2197: True Item: 5140 | Top-5: [7763, 868, 174, 477, 5964] | Hit: ✗
+EarlyStopping counter: 10 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.83it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.20s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.22it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 97, 'rec_avg_loss': '6.0134', 'icl_avg_loss': '2.0122', 'joint_avg_loss': '8.0257'}
+100%|██████████| 76/76 [00:07<00:00, 10.62it/s]
+{'Epoch': 97, 'HIT@5': '0.0774', 'HIT@10': '0.1053', 'HIT@20': '0.1394', 'NDCG@5': '0.0559', 'NDCG@10': '0.0649', 'NDCG@20': '0.0734'}
+Top5_Sample:User 17324: True Item: 6261 | Top-5: [4245, 3720, 8536, 1315, 4712] | Hit: ✗
+User 14310: True Item: 6934 | Top-5: [7709, 10147, 3376, 6866, 4626] | Hit: ✗
+User 14826: True Item: 1197 | Top-5: [361, 3192, 2464, 674, 2553] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:12<00:00, 33.33it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.66s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.20it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 98, 'rec_avg_loss': '6.0082', 'icl_avg_loss': '2.0103', 'joint_avg_loss': '8.0185'}
+100%|██████████| 76/76 [00:07<00:00, 10.67it/s]
+{'Epoch': 98, 'HIT@5': '0.0773', 'HIT@10': '0.1035', 'HIT@20': '0.1377', 'NDCG@5': '0.0558', 'NDCG@10': '0.0643', 'NDCG@20': '0.0729'}
+Top5_Sample:User 19314: True Item: 1179 | Top-5: [1467, 1940, 1088, 1178, 4351] | Hit: ✗
+User 5714: True Item: 10353 | Top-5: [3798, 718, 582, 1731, 5186] | Hit: ✗
+User 7737: True Item: 2292 | Top-5: [9556, 529, 8841, 2546, 495] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.07it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.54s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.30it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 99, 'rec_avg_loss': '5.9963', 'icl_avg_loss': '2.0112', 'joint_avg_loss': '8.0076'}
+100%|██████████| 76/76 [00:07<00:00, 10.59it/s]
+{'Epoch': 99, 'HIT@5': '0.0770', 'HIT@10': '0.1039', 'HIT@20': '0.1386', 'NDCG@5': '0.0561', 'NDCG@10': '0.0647', 'NDCG@20': '0.0734'}
+Top5_Sample:User 4432: True Item: 6117 | Top-5: [865, 1904, 82, 2625, 9749] | Hit: ✗
+User 505: True Item: 1187 | Top-5: [1186, 4543, 1187, 2569, 9750] | Hit: ✓
+User 17046: True Item: 9670 | Top-5: [9062, 984, 4925, 9934, 11228] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 30.90it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.44it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 100, 'rec_avg_loss': '6.0051', 'icl_avg_loss': '2.0111', 'joint_avg_loss': '8.0162'}
+100%|██████████| 76/76 [00:07<00:00, 10.64it/s]
+{'Epoch': 100, 'HIT@5': '0.0759', 'HIT@10': '0.1035', 'HIT@20': '0.1383', 'NDCG@5': '0.0553', 'NDCG@10': '0.0642', 'NDCG@20': '0.0730'}
+Top5_Sample:User 662: True Item: 1025 | Top-5: [4781, 416, 1040, 1160, 2727] | Hit: ✗
+User 19123: True Item: 9912 | Top-5: [2183, 3248, 11827, 9905, 9907] | Hit: ✗
+User 2165: True Item: 361 | Top-5: [2623, 2741, 2520, 276, 2626] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.28it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:17<00:00,  5.51it/s]
+{'epoch': 101, 'rec_avg_loss': '5.9940', 'icl_avg_loss': '2.0103', 'joint_avg_loss': '8.0043'}
+100%|██████████| 76/76 [00:07<00:00, 10.01it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 101, 'HIT@5': '0.0769', 'HIT@10': '0.1045', 'HIT@20': '0.1376', 'NDCG@5': '0.0558', 'NDCG@10': '0.0647', 'NDCG@20': '0.0730'}
+Top5_Sample:User 14903: True Item: 2871 | Top-5: [3092, 3540, 3591, 1048, 6483] | Hit: ✗
+User 11066: True Item: 10581 | Top-5: [5014, 5015, 10336, 5012, 10337] | Hit: ✗
+User 5132: True Item: 5574 | Top-5: [467, 497, 51, 447, 2834] | Hit: ✗
+EarlyStopping counter: 4 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.96it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.46s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.63it/s]
+{'epoch': 102, 'rec_avg_loss': '5.9899', 'icl_avg_loss': '2.0116', 'joint_avg_loss': '8.0015'}
+100%|██████████| 76/76 [00:07<00:00,  9.99it/s]
+{'Epoch': 102, 'HIT@5': '0.0767', 'HIT@10': '0.1040', 'HIT@20': '0.1374', 'NDCG@5': '0.0554', 'NDCG@10': '0.0642', 'NDCG@20': '0.0727'}
+Top5_Sample:User 15575: True Item: 10113 | Top-5: [3845, 5658, 5608, 3253, 6116] | Hit: ✗
+User 8829: True Item: 9585 | Top-5: [93, 7334, 7332, 3800, 10066] | Hit: ✗
+User 11683: True Item: 3398 | Top-5: [11317, 9064, 6897, 6828, 11316] | Hit: ✗
+EarlyStopping counter: 5 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.00it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.54s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.68it/s]
+{'epoch': 103, 'rec_avg_loss': '5.9863', 'icl_avg_loss': '2.0119', 'joint_avg_loss': '7.9982'}
+100%|██████████| 76/76 [00:07<00:00, 10.54it/s]
+{'Epoch': 103, 'HIT@5': '0.0781', 'HIT@10': '0.1042', 'HIT@20': '0.1372', 'NDCG@5': '0.0562', 'NDCG@10': '0.0646', 'NDCG@20': '0.0728'}
+Top5_Sample:User 725: True Item: 4816 | Top-5: [969, 961, 3919, 1182, 4219] | Hit: ✗
+User 4936: True Item: 10557 | Top-5: [5762, 6891, 4166, 3031, 450] | Hit: ✗
+User 4922: True Item: 4776 | Top-5: [2284, 6576, 3441, 7763, 11398] | Hit: ✗
+EarlyStopping counter: 6 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.54it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.52s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.68it/s]
+{'epoch': 104, 'rec_avg_loss': '5.9867', 'icl_avg_loss': '2.0100', 'joint_avg_loss': '7.9967'}
+100%|██████████| 76/76 [00:07<00:00, 10.38it/s]
+{'Epoch': 104, 'HIT@5': '0.0772', 'HIT@10': '0.1033', 'HIT@20': '0.1379', 'NDCG@5': '0.0557', 'NDCG@10': '0.0641', 'NDCG@20': '0.0729'}
+Top5_Sample:User 5137: True Item: 7401 | Top-5: [8073, 1707, 961, 7436, 954] | Hit: ✗
+User 5739: True Item: 55 | Top-5: [865, 2741, 2478, 4746, 5106] | Hit: ✗
+User 5234: True Item: 870 | Top-5: [115, 369, 524, 3812, 721] | Hit: ✗
+EarlyStopping counter: 7 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.17it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.42s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.67it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 105, 'rec_avg_loss': '5.9870', 'icl_avg_loss': '2.0101', 'joint_avg_loss': '7.9972'}
+100%|██████████| 76/76 [00:07<00:00, 10.35it/s]
+{'Epoch': 105, 'HIT@5': '0.0774', 'HIT@10': '0.1052', 'HIT@20': '0.1380', 'NDCG@5': '0.0561', 'NDCG@10': '0.0650', 'NDCG@20': '0.0732'}
+Top5_Sample:User 11142: True Item: 518 | Top-5: [969, 502, 250, 1683, 812] | Hit: ✗
+User 4098: True Item: 1951 | Top-5: [1855, 1804, 1808, 1988, 1800] | Hit: ✗
+User 109: True Item: 1400 | Top-5: [1227, 1464, 1687, 1564, 990] | Hit: ✗
+EarlyStopping counter: 8 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.33it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.46s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.71it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 106, 'rec_avg_loss': '5.9759', 'icl_avg_loss': '2.0106', 'joint_avg_loss': '7.9865'}
+100%|██████████| 76/76 [00:07<00:00, 10.28it/s]
+{'Epoch': 106, 'HIT@5': '0.0772', 'HIT@10': '0.1047', 'HIT@20': '0.1386', 'NDCG@5': '0.0561', 'NDCG@10': '0.0649', 'NDCG@20': '0.0734'}
+Top5_Sample:User 11581: True Item: 9653 | Top-5: [4438, 6412, 10573, 584, 11127] | Hit: ✗
+User 12243: True Item: 11602 | Top-5: [10689, 7764, 5821, 10506, 11659] | Hit: ✗
+User 19223: True Item: 1116 | Top-5: [1116, 1940, 4351, 1264, 1634] | Hit: ✓
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 31.61it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.51s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.68it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 107, 'rec_avg_loss': '5.9839', 'icl_avg_loss': '2.0102', 'joint_avg_loss': '7.9941'}
+100%|██████████| 76/76 [00:07<00:00, 10.36it/s]
+{'Epoch': 107, 'HIT@5': '0.0767', 'HIT@10': '0.1038', 'HIT@20': '0.1384', 'NDCG@5': '0.0557', 'NDCG@10': '0.0644', 'NDCG@20': '0.0731'}
+Top5_Sample:User 8271: True Item: 5502 | Top-5: [34, 1607, 866, 531, 7060] | Hit: ✗
+User 887: True Item: 5519 | Top-5: [10504, 7760, 3554, 10383, 8536] | Hit: ✗
+User 13489: True Item: 8769 | Top-5: [9444, 6495, 2041, 204, 2590] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.11it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.46s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.67it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 108, 'rec_avg_loss': '5.9754', 'icl_avg_loss': '2.0089', 'joint_avg_loss': '7.9843'}
+100%|██████████| 76/76 [00:07<00:00, 10.41it/s]
+{'Epoch': 108, 'HIT@5': '0.0769', 'HIT@10': '0.1029', 'HIT@20': '0.1383', 'NDCG@5': '0.0556', 'NDCG@10': '0.0641', 'NDCG@20': '0.0729'}
+Top5_Sample:User 6768: True Item: 303 | Top-5: [2133, 9576, 1874, 1829, 149] | Hit: ✗
+User 375: True Item: 1794 | Top-5: [1912, 1830, 1792, 2012, 1864] | Hit: ✗
+User 6636: True Item: 2048 | Top-5: [3011, 2, 6351, 7448, 3816] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.88it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.51s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.72it/s]
+{'epoch': 109, 'rec_avg_loss': '5.9743', 'icl_avg_loss': '2.0103', 'joint_avg_loss': '7.9846'}
+100%|██████████| 76/76 [00:07<00:00, 10.23it/s]
+{'Epoch': 109, 'HIT@5': '0.0772', 'HIT@10': '0.1038', 'HIT@20': '0.1383', 'NDCG@5': '0.0557', 'NDCG@10': '0.0643', 'NDCG@20': '0.0730'}
+Top5_Sample:User 8264: True Item: 8122 | Top-5: [8618, 11274, 7191, 665, 5017] | Hit: ✗
+User 5241: True Item: 396 | Top-5: [2835, 4019, 2292, 6843, 901] | Hit: ✗
+User 6154: True Item: 176 | Top-5: [541, 364, 3207, 3026, 1909] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.00it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.18s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.63it/s]
+{'epoch': 110, 'rec_avg_loss': '5.9651', 'icl_avg_loss': '2.0101', 'joint_avg_loss': '7.9753'}
+100%|██████████| 76/76 [00:07<00:00, 10.30it/s]
+{'Epoch': 110, 'HIT@5': '0.0772', 'HIT@10': '0.1033', 'HIT@20': '0.1387', 'NDCG@5': '0.0561', 'NDCG@10': '0.0645', 'NDCG@20': '0.0734'}
+Top5_Sample:User 10818: True Item: 601 | Top-5: [1574, 6572, 748, 1328, 963] | Hit: ✗
+User 7962: True Item: 11014 | Top-5: [11492, 9056, 246, 8613, 1008] | Hit: ✗
+User 4252: True Item: 7427 | Top-5: [4505, 4322, 2834, 1033, 1357] | Hit: ✗
+EarlyStopping counter: 4 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.53it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.46it/s]
+{'epoch': 111, 'rec_avg_loss': '5.9644', 'icl_avg_loss': '2.0091', 'joint_avg_loss': '7.9735'}
+100%|██████████| 76/76 [00:07<00:00, 10.28it/s]
+{'Epoch': 111, 'HIT@5': '0.0771', 'HIT@10': '0.1041', 'HIT@20': '0.1386', 'NDCG@5': '0.0561', 'NDCG@10': '0.0648', 'NDCG@20': '0.0735'}
+Top5_Sample:User 14496: True Item: 2241 | Top-5: [2004, 676, 10339, 3083, 467] | Hit: ✗
+User 19001: True Item: 1043 | Top-5: [1152, 161, 1169, 1165, 837] | Hit: ✗
+User 19319: True Item: 1086 | Top-5: [3868, 1221, 1184, 980, 2204] | Hit: ✗
+Validation score increased.  Saving model ...
+100%|██████████| 428/428 [00:13<00:00, 32.56it/s]
+100%|██████████| 1/1 [00:02<00:00,  3.00s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.32it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 112, 'rec_avg_loss': '5.9577', 'icl_avg_loss': '2.0105', 'joint_avg_loss': '7.9682'}
+100%|██████████| 76/76 [00:07<00:00, 10.31it/s]
+{'Epoch': 112, 'HIT@5': '0.0766', 'HIT@10': '0.1032', 'HIT@20': '0.1382', 'NDCG@5': '0.0555', 'NDCG@10': '0.0641', 'NDCG@20': '0.0729'}
+Top5_Sample:User 6729: True Item: 554 | Top-5: [440, 4089, 403, 6546, 5252] | Hit: ✗
+User 8505: True Item: 6677 | Top-5: [4635, 4774, 6017, 6014, 9111] | Hit: ✗
+User 8209: True Item: 1829 | Top-5: [2338, 3662, 7442, 10224, 7568] | Hit: ✗
+EarlyStopping counter: 1 out of 40
+100%|██████████| 428/428 [00:12<00:00, 33.22it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.20s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.22it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 113, 'rec_avg_loss': '5.9622', 'icl_avg_loss': '2.0092', 'joint_avg_loss': '7.9714'}
+100%|██████████| 76/76 [00:07<00:00, 10.48it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 113, 'HIT@5': '0.0765', 'HIT@10': '0.1037', 'HIT@20': '0.1384', 'NDCG@5': '0.0551', 'NDCG@10': '0.0638', 'NDCG@20': '0.0726'}
+Top5_Sample:User 6178: True Item: 6194 | Top-5: [1483, 940, 1650, 1015, 1731] | Hit: ✗
+User 12837: True Item: 2022 | Top-5: [6610, 2606, 7577, 8241, 5575] | Hit: ✗
+User 3276: True Item: 6258 | Top-5: [1307, 8284, 4180, 7820, 1137] | Hit: ✗
+EarlyStopping counter: 2 out of 40
+100%|██████████| 428/428 [00:12<00:00, 33.36it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.10s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:23<00:00,  5.13it/s]
+{'epoch': 114, 'rec_avg_loss': '5.9487', 'icl_avg_loss': '2.0102', 'joint_avg_loss': '7.9589'}
+100%|██████████| 76/76 [00:07<00:00, 10.54it/s]
+{'Epoch': 114, 'HIT@5': '0.0766', 'HIT@10': '0.1026', 'HIT@20': '0.1376', 'NDCG@5': '0.0555', 'NDCG@10': '0.0639', 'NDCG@20': '0.0727'}
+Top5_Sample:User 462: True Item: 1931 | Top-5: [1912, 1792, 1798, 2012, 1828] | Hit: ✗
+User 2404: True Item: 8457 | Top-5: [8323, 11254, 8322, 8825, 571] | Hit: ✗
+User 8788: True Item: 5507 | Top-5: [6272, 4570, 4776, 1735, 3841] | Hit: ✗
+EarlyStopping counter: 3 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.48it/s]
+100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:21<00:00,  5.23it/s]
+{'epoch': 115, 'rec_avg_loss': '5.9483', 'icl_avg_loss': '2.0092', 'joint_avg_loss': '7.9575'}
+100%|██████████| 76/76 [00:07<00:00, 10.52it/s]
+{'Epoch': 115, 'HIT@5': '0.0766', 'HIT@10': '0.1036', 'HIT@20': '0.1379', 'NDCG@5': '0.0556', 'NDCG@10': '0.0643', 'NDCG@20': '0.0729'}
+Top5_Sample:User 16716: True Item: 2729 | Top-5: [817, 1011, 1403, 818, 1121] | Hit: ✗
+User 12309: True Item: 10777 | Top-5: [6646, 275, 4626, 1285, 1358] | Hit: ✗
+User 15134: True Item: 4911 | Top-5: [1320, 1394, 1509, 829, 806] | Hit: ✗
+EarlyStopping counter: 4 out of 40
+100%|██████████| 428/428 [00:14<00:00, 30.18it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.39it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 116, 'rec_avg_loss': '5.9472', 'icl_avg_loss': '2.0093', 'joint_avg_loss': '7.9565'}
+100%|██████████| 76/76 [00:07<00:00, 10.27it/s]
+{'Epoch': 116, 'HIT@5': '0.0780', 'HIT@10': '0.1038', 'HIT@20': '0.1377', 'NDCG@5': '0.0562', 'NDCG@10': '0.0644', 'NDCG@20': '0.0730'}
+Top5_Sample:User 6350: True Item: 6755 | Top-5: [417, 494, 866, 4948, 595] | Hit: ✗
+User 14598: True Item: 2513 | Top-5: [108, 4944, 400, 468, 5699] | Hit: ✗
+User 13892: True Item: 8876 | Top-5: [1307, 1283, 1033, 413, 613] | Hit: ✗
+EarlyStopping counter: 5 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.04it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.46s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.48it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 117, 'rec_avg_loss': '5.9459', 'icl_avg_loss': '2.0092', 'joint_avg_loss': '7.9552'}
+100%|██████████| 76/76 [00:07<00:00,  9.94it/s]
+{'Epoch': 117, 'HIT@5': '0.0774', 'HIT@10': '0.1034', 'HIT@20': '0.1383', 'NDCG@5': '0.0559', 'NDCG@10': '0.0642', 'NDCG@20': '0.0730'}
+Top5_Sample:User 12400: True Item: 4265 | Top-5: [5757, 4795, 7062, 5499, 796] | Hit: ✗
+User 6652: True Item: 1618 | Top-5: [7238, 3816, 4893, 4812, 2817] | Hit: ✗
+User 6375: True Item: 4165 | Top-5: [7105, 5687, 5, 6, 4776] | Hit: ✗
+EarlyStopping counter: 6 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.79it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.57it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 118, 'rec_avg_loss': '5.9379', 'icl_avg_loss': '2.0082', 'joint_avg_loss': '7.9461'}
+100%|██████████| 76/76 [00:07<00:00, 10.07it/s]
+{'Epoch': 118, 'HIT@5': '0.0786', 'HIT@10': '0.1043', 'HIT@20': '0.1378', 'NDCG@5': '0.0562', 'NDCG@10': '0.0644', 'NDCG@20': '0.0728'}
+Top5_Sample:User 18264: True Item: 1299 | Top-5: [2060, 1021, 1744, 812, 1197] | Hit: ✗
+User 17428: True Item: 2286 | Top-5: [1161, 8512, 793, 783, 250] | Hit: ✗
+User 8649: True Item: 8482 | Top-5: [510, 470, 4293, 7179, 11370] | Hit: ✗
+EarlyStopping counter: 7 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.97it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.71it/s]
+{'epoch': 119, 'rec_avg_loss': '5.9398', 'icl_avg_loss': '2.0098', 'joint_avg_loss': '7.9496'}
+100%|██████████| 76/76 [00:07<00:00, 10.02it/s]
+{'Epoch': 119, 'HIT@5': '0.0781', 'HIT@10': '0.1027', 'HIT@20': '0.1379', 'NDCG@5': '0.0562', 'NDCG@10': '0.0641', 'NDCG@20': '0.0730'}
+Top5_Sample:User 12664: True Item: 474 | Top-5: [4221, 9465, 8384, 2939, 7976] | Hit: ✗
+User 14378: True Item: 13 | Top-5: [1307, 1283, 1443, 1137, 337] | Hit: ✗
+User 15173: True Item: 414 | Top-5: [3037, 603, 414, 3040, 6175] | Hit: ✓
+EarlyStopping counter: 8 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.13it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.69it/s]
+{'epoch': 120, 'rec_avg_loss': '5.9355', 'icl_avg_loss': '2.0094', 'joint_avg_loss': '7.9449'}
+100%|██████████| 76/76 [00:07<00:00, 10.47it/s]
+{'Epoch': 120, 'HIT@5': '0.0776', 'HIT@10': '0.1032', 'HIT@20': '0.1381', 'NDCG@5': '0.0558', 'NDCG@10': '0.0640', 'NDCG@20': '0.0728'}
+Top5_Sample:User 18460: True Item: 10544 | Top-5: [4605, 11297, 767, 2733, 766] | Hit: ✗
+User 5093: True Item: 4308 | Top-5: [179, 3588, 5981, 511, 535] | Hit: ✗
+User 14495: True Item: 4786 | Top-5: [4044, 89, 87, 5494, 7078] | Hit: ✗
+EarlyStopping counter: 9 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.85it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:14<00:00,  5.71it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 121, 'rec_avg_loss': '5.9292', 'icl_avg_loss': '2.0115', 'joint_avg_loss': '7.9408'}
+100%|██████████| 76/76 [00:07<00:00, 10.39it/s]
+{'Epoch': 121, 'HIT@5': '0.0777', 'HIT@10': '0.1034', 'HIT@20': '0.1374', 'NDCG@5': '0.0557', 'NDCG@10': '0.0640', 'NDCG@20': '0.0725'}
+Top5_Sample:User 11219: True Item: 8768 | Top-5: [1021, 1683, 5542, 11627, 1020] | Hit: ✗
+User 1276: True Item: 2161 | Top-5: [5302, 6022, 506, 2973, 2226] | Hit: ✗
+User 13553: True Item: 3191 | Top-5: [3320, 10745, 2569, 2046, 4778] | Hit: ✗
+EarlyStopping counter: 10 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.08it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.52s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.70it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 122, 'rec_avg_loss': '5.9361', 'icl_avg_loss': '2.0099', 'joint_avg_loss': '7.9460'}
+100%|██████████| 76/76 [00:07<00:00, 10.29it/s]
+{'Epoch': 122, 'HIT@5': '0.0778', 'HIT@10': '0.1037', 'HIT@20': '0.1379', 'NDCG@5': '0.0558', 'NDCG@10': '0.0641', 'NDCG@20': '0.0727'}
+Top5_Sample:User 5866: True Item: 1413 | Top-5: [4030, 6518, 127, 1770, 2444] | Hit: ✗
+User 962: True Item: 5597 | Top-5: [2157, 1797, 1944, 1930, 1903] | Hit: ✗
+User 16029: True Item: 6213 | Top-5: [10446, 11693, 7118, 10599, 9616] | Hit: ✗
+EarlyStopping counter: 11 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.06it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.65it/s]
+{'epoch': 123, 'rec_avg_loss': '5.9324', 'icl_avg_loss': '2.0084', 'joint_avg_loss': '7.9408'}
+100%|██████████| 76/76 [00:07<00:00, 10.08it/s]
+{'Epoch': 123, 'HIT@5': '0.0784', 'HIT@10': '0.1031', 'HIT@20': '0.1385', 'NDCG@5': '0.0562', 'NDCG@10': '0.0642', 'NDCG@20': '0.0731'}
+Top5_Sample:User 10833: True Item: 2162 | Top-5: [6814, 2411, 2792, 2352, 8580] | Hit: ✗
+User 14506: True Item: 524 | Top-5: [6885, 3356, 6871, 6957, 7075] | Hit: ✗
+User 13415: True Item: 1522 | Top-5: [8512, 389, 461, 4210, 10421] | Hit: ✗
+EarlyStopping counter: 12 out of 40
+100%|██████████| 428/428 [00:14<00:00, 29.85it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.55s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.61it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 124, 'rec_avg_loss': '5.9274', 'icl_avg_loss': '2.0092', 'joint_avg_loss': '7.9366'}
+100%|██████████| 76/76 [00:07<00:00, 10.29it/s]
+{'Epoch': 124, 'HIT@5': '0.0766', 'HIT@10': '0.1038', 'HIT@20': '0.1384', 'NDCG@5': '0.0552', 'NDCG@10': '0.0639', 'NDCG@20': '0.0726'}
+Top5_Sample:User 17462: True Item: 1292 | Top-5: [1085, 1364, 1403, 1114, 3297] | Hit: ✗
+User 13560: True Item: 2208 | Top-5: [6843, 901, 9035, 4428, 5404] | Hit: ✗
+User 17002: True Item: 11492 | Top-5: [2209, 8345, 8668, 9846, 6810] | Hit: ✗
+EarlyStopping counter: 13 out of 40
+100%|██████████| 428/428 [00:13<00:00, 30.64it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.57it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 125, 'rec_avg_loss': '5.9246', 'icl_avg_loss': '2.0075', 'joint_avg_loss': '7.9320'}
+100%|██████████| 76/76 [00:07<00:00,  9.78it/s]
+{'Epoch': 125, 'HIT@5': '0.0776', 'HIT@10': '0.1034', 'HIT@20': '0.1382', 'NDCG@5': '0.0556', 'NDCG@10': '0.0639', 'NDCG@20': '0.0727'}
+Top5_Sample:User 12318: True Item: 1159 | Top-5: [969, 3919, 501, 1182, 2231] | Hit: ✗
+User 933: True Item: 1811 | Top-5: [1822, 7880, 1800, 1799, 1798] | Hit: ✗
+User 15103: True Item: 5586 | Top-5: [11478, 3844, 6350, 2678, 6351] | Hit: ✗
+EarlyStopping counter: 14 out of 40
+100%|██████████| 428/428 [00:13<00:00, 30.93it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.68it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 126, 'rec_avg_loss': '5.9246', 'icl_avg_loss': '2.0084', 'joint_avg_loss': '7.9331'}
+100%|██████████| 76/76 [00:07<00:00, 10.18it/s]
+{'Epoch': 126, 'HIT@5': '0.0766', 'HIT@10': '0.1025', 'HIT@20': '0.1387', 'NDCG@5': '0.0553', 'NDCG@10': '0.0637', 'NDCG@20': '0.0728'}
+Top5_Sample:User 15550: True Item: 7482 | Top-5: [11057, 5919, 9625, 3642, 747] | Hit: ✗
+User 18815: True Item: 10338 | Top-5: [10824, 11905, 10830, 10825, 10678] | Hit: ✗
+User 1525: True Item: 1990 | Top-5: [1945, 1886, 1860, 1943, 1914] | Hit: ✗
+EarlyStopping counter: 15 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.01it/s]
+100%|██████████| 1/1 [00:02<00:00,  3.00s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.56it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 127, 'rec_avg_loss': '5.9191', 'icl_avg_loss': '2.0099', 'joint_avg_loss': '7.9290'}
+100%|██████████| 76/76 [00:07<00:00, 10.19it/s]
+{'Epoch': 127, 'HIT@5': '0.0774', 'HIT@10': '0.1031', 'HIT@20': '0.1381', 'NDCG@5': '0.0561', 'NDCG@10': '0.0643', 'NDCG@20': '0.0731'}
+Top5_Sample:User 19119: True Item: 8598 | Top-5: [2668, 6572, 961, 4252, 3151] | Hit: ✗
+User 9304: True Item: 4069 | Top-5: [1092, 1591, 7683, 514, 706] | Hit: ✗
+User 6418: True Item: 6436 | Top-5: [5960, 3083, 9580, 400, 1066] | Hit: ✗
+EarlyStopping counter: 16 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.38it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.88s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:19<00:00,  5.39it/s]
+{'epoch': 128, 'rec_avg_loss': '5.9173', 'icl_avg_loss': '2.0090', 'joint_avg_loss': '7.9263'}
+100%|██████████| 76/76 [00:07<00:00, 10.28it/s]
+{'Epoch': 128, 'HIT@5': '0.0781', 'HIT@10': '0.1035', 'HIT@20': '0.1380', 'NDCG@5': '0.0566', 'NDCG@10': '0.0648', 'NDCG@20': '0.0734'}
+Top5_Sample:User 3782: True Item: 1070 | Top-5: [9773, 7133, 10040, 731, 261] | Hit: ✗
+User 17111: True Item: 843 | Top-5: [152, 842, 3868, 5664, 2825] | Hit: ✗
+User 2758: True Item: 2458 | Top-5: [3288, 7628, 6744, 3984, 3083] | Hit: ✗
+EarlyStopping counter: 17 out of 40
+100%|██████████| 428/428 [00:12<00:00, 34.35it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.16s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.30it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 129, 'rec_avg_loss': '5.9158', 'icl_avg_loss': '2.0090', 'joint_avg_loss': '7.9247'}
+100%|██████████| 76/76 [00:07<00:00,  9.98it/s]
+{'Epoch': 129, 'HIT@5': '0.0783', 'HIT@10': '0.1036', 'HIT@20': '0.1374', 'NDCG@5': '0.0567', 'NDCG@10': '0.0648', 'NDCG@20': '0.0733'}
+Top5_Sample:User 4382: True Item: 147 | Top-5: [147, 148, 1989, 6992, 3058] | Hit: ✓
+User 6365: True Item: 497 | Top-5: [497, 2834, 83, 22, 3968] | Hit: ✓
+User 17307: True Item: 4128 | Top-5: [4126, 7891, 5630, 9946, 742] | Hit: ✗
+EarlyStopping counter: 18 out of 40
+100%|██████████| 428/428 [00:13<00:00, 32.80it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:23<00:00,  5.15it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 130, 'rec_avg_loss': '5.9129', 'icl_avg_loss': '2.0083', 'joint_avg_loss': '7.9213'}
+100%|██████████| 76/76 [00:07<00:00, 10.23it/s]
+{'Epoch': 130, 'HIT@5': '0.0777', 'HIT@10': '0.1040', 'HIT@20': '0.1385', 'NDCG@5': '0.0561', 'NDCG@10': '0.0646', 'NDCG@20': '0.0733'}
+Top5_Sample:User 3897: True Item: 3218 | Top-5: [39, 4855, 1472, 1447, 7316] | Hit: ✗
+User 16068: True Item: 6116 | Top-5: [3011, 10969, 2, 3360, 2817] | Hit: ✗
+User 16575: True Item: 4588 | Top-5: [4911, 983, 1712, 5861, 231] | Hit: ✗
+EarlyStopping counter: 19 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.73it/s]
+100%|██████████| 1/1 [00:04<00:00,  4.35s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:22<00:00,  5.20it/s]
+{'epoch': 131, 'rec_avg_loss': '5.9140', 'icl_avg_loss': '2.0088', 'joint_avg_loss': '7.9228'}
+100%|██████████| 76/76 [00:07<00:00, 10.59it/s]
+{'Epoch': 131, 'HIT@5': '0.0775', 'HIT@10': '0.1024', 'HIT@20': '0.1382', 'NDCG@5': '0.0557', 'NDCG@10': '0.0637', 'NDCG@20': '0.0727'}
+Top5_Sample:User 3954: True Item: 10058 | Top-5: [2378, 3868, 6740, 2730, 1630] | Hit: ✗
+User 2424: True Item: 4975 | Top-5: [877, 5361, 576, 8043, 5374] | Hit: ✗
+User 18163: True Item: 4436 | Top-5: [5640, 9088, 9089, 70, 10484] | Hit: ✗
+EarlyStopping counter: 20 out of 40
+100%|██████████| 428/428 [00:13<00:00, 30.73it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:20<00:00,  5.34it/s]
+{'epoch': 132, 'rec_avg_loss': '5.9114', 'icl_avg_loss': '2.0090', 'joint_avg_loss': '7.9204'}
+100%|██████████| 76/76 [00:07<00:00, 10.10it/s]
+{'Epoch': 132, 'HIT@5': '0.0774', 'HIT@10': '0.1032', 'HIT@20': '0.1376', 'NDCG@5': '0.0561', 'NDCG@10': '0.0644', 'NDCG@20': '0.0730'}
+Top5_Sample:User 18384: True Item: 1009 | Top-5: [160, 839, 1169, 1079, 1171] | Hit: ✗
+User 1808: True Item: 5275 | Top-5: [37, 599, 799, 11432, 509] | Hit: ✗
+User 11144: True Item: 2372 | Top-5: [8404, 3267, 627, 2369, 3587] | Hit: ✗
+EarlyStopping counter: 21 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.25it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:18<00:00,  5.46it/s]
+{'epoch': 133, 'rec_avg_loss': '5.9057', 'icl_avg_loss': '2.0086', 'joint_avg_loss': '7.9143'}
+100%|██████████| 76/76 [00:07<00:00,  9.77it/s]
+{'Epoch': 133, 'HIT@5': '0.0772', 'HIT@10': '0.1030', 'HIT@20': '0.1374', 'NDCG@5': '0.0556', 'NDCG@10': '0.0639', 'NDCG@20': '0.0726'}
+Top5_Sample:User 17662: True Item: 10710 | Top-5: [3866, 10710, 1726, 11054, 1744] | Hit: ✓
+User 13554: True Item: 586 | Top-5: [7856, 3037, 3040, 7062, 1311] | Hit: ✗
+User 9958: True Item: 11236 | Top-5: [8902, 11239, 8898, 8908, 8901] | Hit: ✗
+EarlyStopping counter: 22 out of 40
+100%|██████████| 428/428 [00:13<00:00, 30.90it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.48s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:16<00:00,  5.56it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 134, 'rec_avg_loss': '5.9005', 'icl_avg_loss': '2.0088', 'joint_avg_loss': '7.9094'}
+100%|██████████| 76/76 [00:07<00:00,  9.85it/s]
+{'Epoch': 134, 'HIT@5': '0.0771', 'HIT@10': '0.1023', 'HIT@20': '0.1377', 'NDCG@5': '0.0558', 'NDCG@10': '0.0640', 'NDCG@20': '0.0729'}
+Top5_Sample:User 7709: True Item: 5254 | Top-5: [34, 40, 531, 423, 5445] | Hit: ✗
+User 5792: True Item: 7556 | Top-5: [5299, 6041, 4487, 4419, 8749] | Hit: ✗
+User 14090: True Item: 7915 | Top-5: [9611, 4776, 8646, 2829, 51] | Hit: ✗
+EarlyStopping counter: 23 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.85it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:15<00:00,  5.66it/s]
+{'epoch': 135, 'rec_avg_loss': '5.8999', 'icl_avg_loss': '2.0084', 'joint_avg_loss': '7.9082'}
+100%|██████████| 76/76 [00:07<00:00, 10.32it/s]
+{'Epoch': 135, 'HIT@5': '0.0766', 'HIT@10': '0.1031', 'HIT@20': '0.1376', 'NDCG@5': '0.0553', 'NDCG@10': '0.0639', 'NDCG@20': '0.0726'}
+Top5_Sample:User 16406: True Item: 11621 | Top-5: [8618, 5017, 8048, 8827, 7905] | Hit: ✗
+User 12941: True Item: 2810 | Top-5: [9887, 4458, 4826, 6728, 2039] | Hit: ✗
+User 1634: True Item: 3858 | Top-5: [3829, 2457, 1203, 1511, 1602] | Hit: ✗
+EarlyStopping counter: 24 out of 40
+100%|██████████| 428/428 [00:13<00:00, 31.95it/s]
+100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [01:11<00:00,  5.97it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 136, 'rec_avg_loss': '5.8970', 'icl_avg_loss': '2.0070', 'joint_avg_loss': '7.9040'}
+100%|██████████| 76/76 [00:06<00:00, 10.94it/s]
+{'Epoch': 136, 'HIT@5': '0.0783', 'HIT@10': '0.1047', 'HIT@20': '0.1377', 'NDCG@5': '0.0564', 'NDCG@10': '0.0649', 'NDCG@20': '0.0732'}
+Top5_Sample:User 1092: True Item: 739 | Top-5: [4431, 400, 684, 7353, 545] | Hit: ✗
+User 4937: True Item: 2796 | Top-5: [506, 39, 7490, 34, 601] | Hit: ✗
+User 4110: True Item: 9755 | Top-5: [82, 364, 55, 186, 573] | Hit: ✗
+EarlyStopping counter: 25 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.14it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.75s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.07it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 137, 'rec_avg_loss': '5.8930', 'icl_avg_loss': '2.0088', 'joint_avg_loss': '7.9017'}
+100%|██████████| 76/76 [00:06<00:00, 10.99it/s]
+{'Epoch': 137, 'HIT@5': '0.0773', 'HIT@10': '0.1041', 'HIT@20': '0.1369', 'NDCG@5': '0.0558', 'NDCG@10': '0.0644', 'NDCG@20': '0.0727'}
+Top5_Sample:User 3725: True Item: 5575 | Top-5: [2606, 7577, 2607, 4139, 8397] | Hit: ✗
+User 9933: True Item: 497 | Top-5: [242, 4273, 2672, 4408, 11609] | Hit: ✗
+User 7363: True Item: 3938 | Top-5: [4694, 6138, 4663, 6810, 6260] | Hit: ✗
+EarlyStopping counter: 26 out of 40
+100%|██████████| 428/428 [00:10<00:00, 38.98it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.71s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:52<00:00,  8.08it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 138, 'rec_avg_loss': '5.8963', 'icl_avg_loss': '2.0079', 'joint_avg_loss': '7.9042'}
+100%|██████████| 76/76 [00:06<00:00, 11.09it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 138, 'HIT@5': '0.0783', 'HIT@10': '0.1036', 'HIT@20': '0.1379', 'NDCG@5': '0.0565', 'NDCG@10': '0.0646', 'NDCG@20': '0.0732'}
+Top5_Sample:User 10252: True Item: 361 | Top-5: [2567, 4832, 2834, 3301, 9495] | Hit: ✗
+User 11563: True Item: 11747 | Top-5: [1316, 987, 1177, 984, 1227] | Hit: ✗
+User 18121: True Item: 8801 | Top-5: [11542, 11759, 8801, 6851, 10413] | Hit: ✓
+EarlyStopping counter: 27 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.37it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.79s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.01it/s]
+{'epoch': 139, 'rec_avg_loss': '5.8906', 'icl_avg_loss': '2.0083', 'joint_avg_loss': '7.8990'}
+100%|██████████| 76/76 [00:07<00:00, 10.82it/s]
+{'Epoch': 139, 'HIT@5': '0.0767', 'HIT@10': '0.1035', 'HIT@20': '0.1381', 'NDCG@5': '0.0557', 'NDCG@10': '0.0643', 'NDCG@20': '0.0729'}
+Top5_Sample:User 15813: True Item: 1292 | Top-5: [415, 416, 250, 1372, 1298] | Hit: ✗
+User 16570: True Item: 7018 | Top-5: [1961, 3000, 5276, 4862, 6346] | Hit: ✗
+User 8631: True Item: 3339 | Top-5: [275, 842, 1008, 2727, 3406] | Hit: ✗
+EarlyStopping counter: 28 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.46it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.73s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.06it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 140, 'rec_avg_loss': '5.8884', 'icl_avg_loss': '2.0085', 'joint_avg_loss': '7.8969'}
+100%|██████████| 76/76 [00:06<00:00, 10.93it/s]
+{'Epoch': 140, 'HIT@5': '0.0775', 'HIT@10': '0.1020', 'HIT@20': '0.1377', 'NDCG@5': '0.0558', 'NDCG@10': '0.0637', 'NDCG@20': '0.0727'}
+Top5_Sample:User 6950: True Item: 1621 | Top-5: [9482, 6389, 1082, 3416, 2982] | Hit: ✗
+User 15006: True Item: 5992 | Top-5: [5992, 9118, 11746, 9012, 3600] | Hit: ✓
+User 10479: True Item: 147 | Top-5: [147, 148, 6992, 149, 4197] | Hit: ✓
+EarlyStopping counter: 29 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.29it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.73s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:52<00:00,  8.10it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 141, 'rec_avg_loss': '5.8904', 'icl_avg_loss': '2.0073', 'joint_avg_loss': '7.8977'}
+100%|██████████| 76/76 [00:06<00:00, 11.04it/s]
+{'Epoch': 141, 'HIT@5': '0.0782', 'HIT@10': '0.1026', 'HIT@20': '0.1377', 'NDCG@5': '0.0561', 'NDCG@10': '0.0640', 'NDCG@20': '0.0728'}
+Top5_Sample:User 11000: True Item: 117 | Top-5: [8405, 11474, 7709, 2834, 698] | Hit: ✗
+User 16303: True Item: 1208 | Top-5: [938, 945, 1501, 1064, 5880] | Hit: ✗
+User 17991: True Item: 2872 | Top-5: [2807, 6911, 6931, 6550, 2802] | Hit: ✗
+EarlyStopping counter: 30 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.43it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.73s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.06it/s]
+{'epoch': 142, 'rec_avg_loss': '5.8890', 'icl_avg_loss': '2.0083', 'joint_avg_loss': '7.8973'}
+100%|██████████| 76/76 [00:06<00:00, 10.86it/s]
+{'Epoch': 142, 'HIT@5': '0.0781', 'HIT@10': '0.1030', 'HIT@20': '0.1389', 'NDCG@5': '0.0562', 'NDCG@10': '0.0642', 'NDCG@20': '0.0732'}
+Top5_Sample:User 16082: True Item: 11187 | Top-5: [1389, 992, 1725, 7153, 1062] | Hit: ✗
+User 10069: True Item: 4364 | Top-5: [9069, 6545, 4138, 2874, 4306] | Hit: ✗
+User 14264: True Item: 8322 | Top-5: [8323, 11254, 571, 9374, 9954] | Hit: ✗
+EarlyStopping counter: 31 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.64it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.02it/s]
+{'epoch': 143, 'rec_avg_loss': '5.8856', 'icl_avg_loss': '2.0077', 'joint_avg_loss': '7.8932'}
+100%|██████████| 76/76 [00:06<00:00, 11.13it/s]
+  0%|          | 0/428 [00:00<?, ?it/s]{'Epoch': 143, 'HIT@5': '0.0776', 'HIT@10': '0.1028', 'HIT@20': '0.1372', 'NDCG@5': '0.0559', 'NDCG@10': '0.0639', 'NDCG@20': '0.0726'}
+Top5_Sample:User 3899: True Item: 4119 | Top-5: [105, 3083, 9941, 2773, 2757] | Hit: ✗
+User 4842: True Item: 8552 | Top-5: [4287, 4510, 9997, 7356, 113] | Hit: ✗
+User 6634: True Item: 1044 | Top-5: [1023, 1021, 1122, 1744, 5840] | Hit: ✗
+EarlyStopping counter: 32 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.12it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.08it/s]
+{'epoch': 144, 'rec_avg_loss': '5.8843', 'icl_avg_loss': '2.0075', 'joint_avg_loss': '7.8918'}
+100%|██████████| 76/76 [00:06<00:00, 11.07it/s]
+{'Epoch': 144, 'HIT@5': '0.0783', 'HIT@10': '0.1029', 'HIT@20': '0.1375', 'NDCG@5': '0.0563', 'NDCG@10': '0.0642', 'NDCG@20': '0.0729'}
+Top5_Sample:User 18812: True Item: 4425 | Top-5: [11741, 6019, 10825, 11656, 11214] | Hit: ✗
+User 12726: True Item: 5938 | Top-5: [229, 818, 1184, 3921, 838] | Hit: ✗
+User 15572: True Item: 8323 | Top-5: [8323, 11254, 571, 8322, 5599] | Hit: ✓
+EarlyStopping counter: 33 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.72it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.73s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.05it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 145, 'rec_avg_loss': '5.8781', 'icl_avg_loss': '2.0079', 'joint_avg_loss': '7.8860'}
+100%|██████████| 76/76 [00:06<00:00, 10.92it/s]
+{'Epoch': 145, 'HIT@5': '0.0791', 'HIT@10': '0.1029', 'HIT@20': '0.1389', 'NDCG@5': '0.0567', 'NDCG@10': '0.0643', 'NDCG@20': '0.0734'}
+Top5_Sample:User 10412: True Item: 8119 | Top-5: [3976, 9586, 261, 4104, 586] | Hit: ✗
+User 19380: True Item: 11274 | Top-5: [8048, 5017, 8815, 11727, 8822] | Hit: ✗
+User 6034: True Item: 7644 | Top-5: [1600, 7419, 2267, 1727, 1347] | Hit: ✗
+EarlyStopping counter: 34 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.69it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.75s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.05it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 146, 'rec_avg_loss': '5.8802', 'icl_avg_loss': '2.0072', 'joint_avg_loss': '7.8874'}
+100%|██████████| 76/76 [00:07<00:00, 10.78it/s]
+{'Epoch': 146, 'HIT@5': '0.0779', 'HIT@10': '0.1015', 'HIT@20': '0.1373', 'NDCG@5': '0.0559', 'NDCG@10': '0.0635', 'NDCG@20': '0.0725'}
+Top5_Sample:User 2821: True Item: 9026 | Top-5: [7797, 5327, 8992, 6712, 6209] | Hit: ✗
+User 14014: True Item: 6614 | Top-5: [2040, 9102, 6898, 6616, 4793] | Hit: ✗
+User 8018: True Item: 1607 | Top-5: [5619, 5077, 423, 34, 671] | Hit: ✗
+EarlyStopping counter: 35 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.71it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.75s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.04it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 147, 'rec_avg_loss': '5.8802', 'icl_avg_loss': '2.0088', 'joint_avg_loss': '7.8890'}
+100%|██████████| 76/76 [00:07<00:00, 10.84it/s]
+{'Epoch': 147, 'HIT@5': '0.0780', 'HIT@10': '0.1020', 'HIT@20': '0.1372', 'NDCG@5': '0.0559', 'NDCG@10': '0.0636', 'NDCG@20': '0.0725'}
+Top5_Sample:User 10635: True Item: 3216 | Top-5: [62, 5, 5890, 40, 6966] | Hit: ✗
+User 15651: True Item: 675 | Top-5: [6613, 675, 9181, 6614, 665] | Hit: ✓
+User 17600: True Item: 4141 | Top-5: [2059, 811, 1044, 250, 502] | Hit: ✗
+EarlyStopping counter: 36 out of 40
+100%|██████████| 428/428 [00:11<00:00, 38.78it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.73s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.03it/s]
+{'epoch': 148, 'rec_avg_loss': '5.8719', 'icl_avg_loss': '2.0088', 'joint_avg_loss': '7.8807'}
+100%|██████████| 76/76 [00:06<00:00, 10.89it/s]
+{'Epoch': 148, 'HIT@5': '0.0771', 'HIT@10': '0.1018', 'HIT@20': '0.1372', 'NDCG@5': '0.0553', 'NDCG@10': '0.0633', 'NDCG@20': '0.0722'}
+Top5_Sample:User 615: True Item: 186 | Top-5: [969, 1574, 3192, 961, 4326] | Hit: ✗
+User 3710: True Item: 9845 | Top-5: [3415, 8277, 2198, 9676, 9836] | Hit: ✗
+User 16572: True Item: 7165 | Top-5: [7157, 7154, 7160, 10672, 10671] | Hit: ✗
+EarlyStopping counter: 37 out of 40
+100%|██████████| 428/428 [00:10<00:00, 38.96it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.74s/it]
+Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:53<00:00,  8.07it/s]
+  0%|          | 0/76 [00:00<?, ?it/s]{'epoch': 149, 'rec_avg_loss': '5.8759', 'icl_avg_loss': '2.0080', 'joint_avg_loss': '7.8839'}
+100%|██████████| 76/76 [00:07<00:00, 10.73it/s]
+{'Epoch': 149, 'HIT@5': '0.0781', 'HIT@10': '0.1033', 'HIT@20': '0.1374', 'NDCG@5': '0.0561', 'NDCG@10': '0.0642', 'NDCG@20': '0.0729'}
+Top5_Sample:User 5492: True Item: 2228 | Top-5: [1354, 128, 2764, 1550, 1326] | Hit: ✗
+User 17508: True Item: 1289 | Top-5: [850, 2203, 1195, 2202, 6758] | Hit: ✗
+User 13841: True Item: 7884 | Top-5: [446, 189, 354, 143, 2516] | Hit: ✗
+EarlyStopping counter: 38 out of 40
+100%|██████████| 428/428 [00:11<00:00, 37.04it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.76s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:54<00:00,  7.91it/s]
+{'epoch': 150, 'rec_avg_loss': '5.8706', 'icl_avg_loss': '2.0084', 'joint_avg_loss': '7.8791'}
+100%|██████████| 76/76 [00:07<00:00, 10.72it/s]
+{'Epoch': 150, 'HIT@5': '0.0782', 'HIT@10': '0.1030', 'HIT@20': '0.1379', 'NDCG@5': '0.0560', 'NDCG@10': '0.0640', 'NDCG@20': '0.0728'}
+Top5_Sample:User 4782: True Item: 1383 | Top-5: [187, 3941, 3264, 5404, 6499] | Hit: ✗
+User 14421: True Item: 839 | Top-5: [1026, 3249, 1023, 1024, 1022] | Hit: ✗
+User 492: True Item: 29 | Top-5: [3315, 34, 531, 110, 5007] | Hit: ✗
+EarlyStopping counter: 39 out of 40
+100%|██████████| 428/428 [00:11<00:00, 36.55it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.86s/it]
+  0%|          | 0/428 [00:00<?, ?it/s]Performing Rec model Training:
+rec dataset length: 428
+100%|██████████| 428/428 [00:55<00:00,  7.66it/s]
+{'epoch': 151, 'rec_avg_loss': '5.8627', 'icl_avg_loss': '2.0081', 'joint_avg_loss': '7.8709'}
+100%|██████████| 76/76 [00:07<00:00, 10.20it/s]
+{'Epoch': 151, 'HIT@5': '0.0771', 'HIT@10': '0.1030', 'HIT@20': '0.1377', 'NDCG@5': '0.0555', 'NDCG@10': '0.0639', 'NDCG@20': '0.0726'}
+Top5_Sample:User 4216: True Item: 2927 | Top-5: [256, 2764, 601, 4088, 35] | Hit: ✗
+User 19006: True Item: 548 | Top-5: [548, 9196, 7352, 7357, 8209] | Hit: ✓
+User 6958: True Item: 7900 | Top-5: [2457, 3829, 2870, 3678, 628] | Hit: ✗
+EarlyStopping counter: 40 out of 40
+Early stopping
+---------------Change to test_rating_matrix!-------------------
+100%|██████████| 76/76 [00:09<00:00,  8.25it/s]
+{'Epoch': 0, 'HIT@5': '0.0771', 'HIT@10': '0.1041', 'HIT@20': '0.1386', 'NDCG@5': '0.0561', 'NDCG@10': '0.0648', 'NDCG@20': '0.0735'}
+Top5_Sample:User 13292: True Item: 489 | Top-5: [522, 470, 870, 179, 177] | Hit: ✗
+User 5084: True Item: 177 | Top-5: [177, 176, 522, 385, 6903] | Hit: ✓
+User 9757: True Item: 3173 | Top-5: [11525, 11618, 10151, 1126, 3330] | Hit: ✗
